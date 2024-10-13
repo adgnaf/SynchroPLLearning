@@ -1,0 +1,4 @@
+function differentOp(ival1 : int8; ival2 : int8) returns (ival3 : bool)
+let
+  ival3 = ival1 <> ival2;
+tel

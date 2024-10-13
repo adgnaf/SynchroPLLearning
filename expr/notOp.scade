@@ -1,0 +1,4 @@
+function notOp(bval1 : bool) returns (bval2 : bool)
+let
+  bval2 = not bval1;
+tel

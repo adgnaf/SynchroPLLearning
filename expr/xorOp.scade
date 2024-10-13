@@ -1,0 +1,4 @@
+function xorOp(bval1 : bool; bval2 : bool) returns (bval3 : bool)
+let  
+  bval3 = bval1 xor bval2;
+tel
