@@ -1,0 +1,12 @@
+function subOp(ival1 : int8; i32val2 : int32)
+  returns (bval : bool; i32val : int32)
+let
+  i32val = i32val2 + (1 : int32);
+  bval = ival1 < 42;
+tel
+
+function foldwiOp() returns (i8val : int8; i32val : int32)
+let
+  i8val, i32val = (foldwi subOp <<10>> if true)(2);
+tel
+

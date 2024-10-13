@@ -1,0 +1,4 @@
+function dynPrjOp(arr1 : int8^3; idx : int8) returns (ival : int8)
+let  
+  ival = (arr1 . [idx] default 0);
+tel

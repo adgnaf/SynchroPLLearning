@@ -1,0 +1,4 @@
+function caseOp(ival1 : int8; ival2 : int8; ival3 : int8; ival4 : int8) returns (ival5 : int8)
+let  
+  ival5 = (case ival1 of | 1: ival2 | 2: ival3 | _: ival4);
+tel

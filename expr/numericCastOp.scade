@@ -1,0 +1,4 @@
+function numericCastOp(i16val1 : int16) returns (i16val2 : int8)
+let  
+  i16val2 = (i16val1 : int8);
+tel

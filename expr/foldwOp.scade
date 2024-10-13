@@ -1,0 +1,10 @@
+function subOp(ival : int32) returns (bval : bool; ival2 : int32)
+let
+  bval = ival < 42;
+  ival2 = ival;
+tel
+
+function foldwOp() returns (ival1 : int32; ival2 : int32)
+let  
+  ival1, ival2 = (foldw subOp <<10>> if true)(1);
+tel
