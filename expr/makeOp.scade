@@ -1,0 +1,6 @@
+type FoobarT = { ival1 : int8, ival2 : int8, bval : bool };
+
+function makeOp(ival1 : int8; bval : bool; ival2 : int8) returns (res : FoobarT)
+let  
+  res = (make FoobarT)(ival1, ival2, bval);
+tel

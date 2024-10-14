@@ -1,0 +1,4 @@
+function mapOp(arr1 : int8^10; arr2 : int8^10) returns (arr3 : int8^10)
+let  
+  arr3 = (map $+$ <<10>>)(arr1, arr2);
+tel
