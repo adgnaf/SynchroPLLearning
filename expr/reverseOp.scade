@@ -1,0 +1,4 @@
+function reverseOp(arr1 : int8^3) returns (arr2 : int8^3)
+let
+  arr2 = reverse arr1;
+tel

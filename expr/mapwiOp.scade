@@ -1,0 +1,10 @@
+function mapwiOp(arr1 : int8^10) returns (ival : int8; arr2 : int8^10)
+let
+  ival, arr2 = (mapwi subOp <<10>> if true default (0))(arr1);
+tel
+
+function subOp(idx : int8; bound : int8) returns (bval : bool; ival : int8)
+let  
+  bval = idx < bound;
+  ival = idx;
+tel

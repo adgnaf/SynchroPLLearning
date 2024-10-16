@@ -1,0 +1,4 @@
+function sharpOp(bval1 : bool; bval2 : bool; bval3 : bool) returns (bval4 : bool)
+let
+   bval4 = #(bval1, bval2, bval3);
+tel

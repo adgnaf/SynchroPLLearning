@@ -1,0 +1,6 @@
+type FoobarT = { ival1 : int8, ival2 : int8 };
+
+function prjOpStruct(foobar : FoobarT) returns (ival : int8)
+let
+  ival = foobar.ival1;
+tel

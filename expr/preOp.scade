@@ -1,0 +1,4 @@
+node preOp(ival1 : int8; ival2 : int8) returns (ival3 : int8)
+let
+  ival3 = (ival2) -> (pre ival1);
+tel
