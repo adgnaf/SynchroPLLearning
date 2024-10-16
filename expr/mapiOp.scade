@@ -1,0 +1,4 @@
+function mapiOp(arr1 : int8^10) returns (arr2 : int8^10)
+let  
+  arr2 = (mapi $+$ <<10>>)(arr1);
+tel
