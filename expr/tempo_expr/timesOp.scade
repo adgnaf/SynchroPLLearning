@@ -1,0 +1,4 @@
+node timesOp(bval1 : bool) returns (bval2 : bool)
+let
+  bval2 = 42 times bval1;
+tel

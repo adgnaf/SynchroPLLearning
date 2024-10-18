@@ -1,0 +1,4 @@
+function dynPrjOpStruct(struct_var : { ival1 : int8, bval : bool }) returns (ival2 : int8)
+let
+  ival2 = (struct_var . .ival1 default 42);
+tel
