@@ -1,0 +1,9 @@
+function prefixOp(ival1 : int8; ival2 : int8) returns (ival3 : int8)
+let  
+  ival3 = subOp(ival1, ival2);
+tel
+
+function subOp(ival1 : int8; ival2 : int8) returns (ival3 : int8)
+let  
+  ival3 = ival1 + ival2;
+tel

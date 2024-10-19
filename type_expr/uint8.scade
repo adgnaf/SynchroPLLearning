@@ -1,0 +1,4 @@
+function typeExprUint8(ival1 : uint8) returns (ival2 : uint8)
+let  
+  ival2 = ival1;
+tel

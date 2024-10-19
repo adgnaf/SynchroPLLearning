@@ -1,0 +1,4 @@
+function defaultDecl(ival1 : bool default = false) returns (ival2 : bool)
+let  
+  ival2 = ival1;
+tel
