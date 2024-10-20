@@ -1,0 +1,4 @@
+function atomBoolTrue() returns (ival2 : bool)
+let  
+  ival2 = true;
+tel

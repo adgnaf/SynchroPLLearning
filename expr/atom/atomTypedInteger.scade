@@ -1,0 +1,4 @@
+function atomTypedInteger() returns (ival : int8)
+let  
+  ival = 8_i8;
+tel

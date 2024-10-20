@@ -1,0 +1,4 @@
+function listExpr(ival: int8; fval: float32) returns (ival2: int8; fval2 : float32)
+let  
+  ival2, fval2 = (ival, fval);
+tel

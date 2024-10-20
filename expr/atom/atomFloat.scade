@@ -1,0 +1,4 @@
+function atomFloat() returns (fval : float32)
+let  
+  fval = 42.42;
+tel
