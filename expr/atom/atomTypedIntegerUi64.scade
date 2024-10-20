@@ -1,0 +1,4 @@
+function atomTypedIntegerUi64() returns (ival2: uint64)
+let  
+  ival2 = 42_ui64;
+tel

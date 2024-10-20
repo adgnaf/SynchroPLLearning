@@ -1,0 +1,4 @@
+function atomTypedIntegerUi32() returns (ival2: uint32)
+let  
+  ival2 = 42_ui32;
+tel

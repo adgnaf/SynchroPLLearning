@@ -1,0 +1,4 @@
+function atomTypedIntegerI32() returns (ival2: int32)
+let  
+  ival2 = 42_i32;
+tel

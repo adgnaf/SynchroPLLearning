@@ -1,0 +1,4 @@
+function atomTypedIntegerUi8() returns (ival2: uint8)
+let  
+  ival2 = 42_ui8;
+tel

@@ -1,0 +1,4 @@
+function atomTypedIntegerI16() returns (ival2: int16)
+let  
+  ival2 = 42_i16;
+tel

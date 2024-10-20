@@ -1,0 +1,4 @@
+function atomTypedIntegerUi16() returns (ival2: uint16)
+let  
+  ival2 = 42_ui16;
+tel

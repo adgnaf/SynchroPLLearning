@@ -1,0 +1,4 @@
+function atomTypedFloat64() returns (ival2: float64)
+let  
+  ival2 = 42.42_f64;
+tel
