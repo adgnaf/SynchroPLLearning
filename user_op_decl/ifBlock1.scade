@@ -1,0 +1,14 @@
+function ifBlock1(cond : bool; ival1 : int8; ival2 : int8)
+  returns (ival3 : int8)
+let
+  activate IfBlock1 if cond = true
+    then 
+    let
+      ival3 = ival1 + ival2;
+    tel
+    else 
+    let
+      ival3 = ival1 - ival2;
+    tel
+  returns ..;
+tel

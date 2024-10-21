@@ -1,0 +1,13 @@
+function whenBlock1(ival1 : int8; bval : bool) returns (ival2 : int8)
+let
+  activate MyWhenBlock when bval match
+      | true :
+      let
+        ival2= ival1;
+      tel
+      | false :
+      let
+        ival2= ival1;
+      tel
+  returns ..;
+tel
