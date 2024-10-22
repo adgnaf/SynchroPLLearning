@@ -1,0 +1,28 @@
+node stateMachineSynchro(ival1 : int8; ival2 : int8; ival3 : int8)
+  returns (ival4 : int8)
+let
+  automaton myStateMachine
+    initial state State1
+      let
+        automaton myInnerStateMachine
+          initial state State2
+            unless
+              if ival2 > 42 restart State3;
+            let
+              ival4 = ival1;
+            tel
+
+          final state State3
+            let
+              ival4 = ival2;
+            tel
+        returns ..;
+      tel
+      until synchro resume State4;
+
+    state State4
+      let
+        ival4 = ival3;
+      tel
+  returns ..;
+tel
