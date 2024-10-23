@@ -1,0 +1,11 @@
+sensor 
+S1 : int8;
+S2 : float32;
+S3 : bool;
+
+function sensorBlock() returns (ival : int8; fval : float32; bval : bool)
+let
+  ival= S1;
+  fval= S2;
+  bval= S3;
+tel
