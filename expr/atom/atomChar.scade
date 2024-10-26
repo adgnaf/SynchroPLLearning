@@ -1,0 +1,6 @@
+function atomChar() returns (cval1 : char; cval2 : char; cval3 : char)
+let  
+  cval1 = '!';
+  cval2 = ' ';
+  cval3 = '\xbe';
+tel
