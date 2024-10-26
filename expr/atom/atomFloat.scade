@@ -1,4 +1,7 @@
-function atomFloat() returns (fval : float32)
+function atomFloat() returns (fval : float32; fval2 : float32; fval3 : float32; fval4 : float32)
 let  
   fval = 42.42;
+  fval2 = 42.42e-2;
+  fval3 = 42.42E-1;
+  fval4 = 42.42e+1;
 tel

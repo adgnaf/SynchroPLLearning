@@ -1,0 +1,24 @@
+package P1
+  package P2
+	  function pkgCallerCalleeHaveCommonAncestor(ival1 : int8; ival2 : int8) returns (ival3 : int8; ival4 : int8; ival5 : int8; ival6 : int8)
+	  let
+		ival3 = P3::subOp(ival1, ival2);
+		ival4 = P1::P3::subOp(ival1, ival2);
+		ival5 = subOp2(ival1, ival2);
+		ival6 = P1::subOp2(ival1, ival2);
+	  tel
+  end;
+  
+  package P3 
+	function subOp(ival1 : int8; ival2 : int8) returns (ival3 : int8)
+	  let
+		ival3 = ival1 + ival2;
+	  tel
+  end;
+  
+  function subOp2(ival1 : int8; ival2 : int8) returns (ival3 : int8)
+	let
+		ival3 = ival1 + ival2;
+	tel
+end;
+
