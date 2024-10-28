@@ -1,0 +1,14 @@
+package P1
+  const C: int8 = 42;
+  package P2
+    const C2: int8 = 24;
+  end;
+end;
+
+open P1;
+package P2
+  function openPathSubPkgIsNotVisible() returns (ival: int8)
+  let
+    ival = C;
+  tel  
+end;

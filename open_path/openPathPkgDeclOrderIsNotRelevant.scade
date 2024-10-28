@@ -1,0 +1,14 @@
+package P1
+  open P1;
+  const C: T1 = 2;
+  
+  function openPathPkgDeclOrderIsNotRelevant() returns (tval: T1)
+  let
+    tval = C;
+  tel
+  
+  package P1
+    type T1 = int32;
+  end;
+
+end;

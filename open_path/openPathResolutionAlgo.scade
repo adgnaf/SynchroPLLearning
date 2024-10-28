@@ -1,0 +1,20 @@
+package P
+  package R
+  const foobar: int8 = 24;
+  end;
+end;
+
+package Q
+  package R
+  const foobar: int8 = 42;
+  end;
+  
+  package S
+  open R;
+  function openPathResolutionAlgo() returns (ival: int8)
+  let
+    -- Q::R::foobar 
+    ival = foobar;
+  tel
+  end;
+end;

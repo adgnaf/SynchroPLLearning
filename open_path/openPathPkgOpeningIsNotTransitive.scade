@@ -1,0 +1,15 @@
+package P1
+  package P2
+    const foo: int8 = 42;
+  end;
+  
+  open P2;
+  const bar: int8 = foo + 1;
+end;
+
+open P1;
+-- foo is invisible 
+function openPathPkgOpeningIsNotTransitive() returns (ival: int8)
+let
+  ival = bar;
+tel
