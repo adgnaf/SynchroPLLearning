@@ -1,0 +1,17 @@
+-- A private declaration can be used inside the package and its subpackages. 
+package P1
+  type private T = int8;
+  const foo: T = 42; -- T can be used inside the package
+  
+  package P2
+    const bar: T = 24; -- T can be used inside the sub-package.
+  end; 
+end;
+
+function privateType() returns (ival: int8)
+var
+  -- l_ival : P1::T; -- P1::T is undefined. 
+let
+  ival = P1::foo;
+  -- l_ival = 42;
+tel

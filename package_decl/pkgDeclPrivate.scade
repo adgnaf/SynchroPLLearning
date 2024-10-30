@@ -1,0 +1,14 @@
+-- A private package is only visible to its direct super package. 
+package P1
+  package private P2
+    const foo: int8 = 42;
+  end;
+  
+  const bar: int8 = P2::foo + 1;
+end;
+
+function pkgDeclPrivate() returns (ival: int8)
+let
+  ival = P1::bar;
+  -- ival = P1::P2::foo; -- error: P1::P2 is undefined. 
+tel

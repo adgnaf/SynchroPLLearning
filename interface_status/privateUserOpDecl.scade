@@ -1,0 +1,20 @@
+-- A private declaration can be used inside the package and its subpackages. 
+package P1
+  function private fooOp() returns (ival: int8)
+  let 
+    ival = 42;
+  tel 
+  
+  package P2
+    function barOp() returns (ival: int8)
+	let
+	  ival = fooOp();
+	tel
+  end; 
+end;
+
+function privateUserOpDecl() returns (ival: int8)
+let
+  ival = P1::P2::barOp();
+  -- ival = P1::fooOp(); -- error: P1::fooOp is undefined. 
+tel
