@@ -1,0 +1,7 @@
+function unsignedN() returns (ival: unsigned<<8>>; ival2: unsigned<<16>>; ival3: unsigned<<32>>; ival4: unsigned<<64>>)
+let
+  ival = 42;
+  ival2 = 42;
+  ival3 = 42;
+  ival4 = 42;
+tel
