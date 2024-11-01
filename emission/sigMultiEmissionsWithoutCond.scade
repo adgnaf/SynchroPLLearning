@@ -1,0 +1,8 @@
+function sigMultiEmissionsWithoutCond() returns (ival1 : int8)
+sig
+  Signal1;
+let
+  emit 'Signal1;
+  emit 'Signal1;
+  ival1 = if ('Signal1) then (42) else (24);
+tel
