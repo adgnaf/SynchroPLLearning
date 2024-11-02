@@ -1,0 +1,11 @@
+node emissionInAction(c: bool) returns (half_c: bool)
+sig s_half_c, s2, s3;
+let
+  half_c = 's_half_c;
+  automaton FreqDiv
+    initial state S1
+	  unless if c resume S2;
+	state S2 
+	  unless if c do {emit 's_half_c; 's2; emit 's3} resume S1;
+  returns .. ; 
+tel

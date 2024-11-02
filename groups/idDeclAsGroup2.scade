@@ -1,0 +1,18 @@
+-- group used in identifier declaration
+
+group 
+G1 = (bool, int32, int32);  
+
+function subOp(e: G1) returns (o: int32)
+var
+l1: bool;
+l2, l3: int32;
+let
+  l1, l2, l3 = e;
+  o = if l1 then l2 else l3;
+tel
+
+function idDeclAsGroup2(arg1: bool; arg2, arg3: int32) returns (o: int32) 
+let
+  o = subOp(arg1, arg2, arg3);
+tel

@@ -1,0 +1,14 @@
+node emissionInEqSet() returns (o: bool)
+sig s;
+let
+  o = 's;
+  automaton 
+  initial state S1
+    unless if true resume S2;
+  let
+    emit 's;
+  tel
+  state S2
+    unless if true resume S1;
+  returns .. ;
+tel

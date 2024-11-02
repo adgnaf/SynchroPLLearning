@@ -1,0 +1,18 @@
+node emissinInState() returns (o1, o2: bool) 
+sig s1, s2;
+let
+  o1 = 's1;
+  o2 = 's2;
+  automaton AlternateActSt
+  initial state S1
+    unless if (false -> last 's1) resume S2;
+  let
+    emit 's1;
+  tel
+  state S2
+    unless if (false -> last 's2) resume S1;
+  let
+    emit 's2;
+  tel
+  returns .. ;
+tel
