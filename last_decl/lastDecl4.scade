@@ -1,0 +1,11 @@
+-- Causallity error for variable `y` 
+
+type T = enum {a, b, c};
+node lastDecl(x: T) returns (y: T last = b)
+let 
+  activate when y match 
+  | a: y = a -> pre(y);
+  | b: y = x;
+  | c: -- empty 
+  returns ..;
+tel 

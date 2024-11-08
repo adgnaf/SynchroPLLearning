@@ -1,0 +1,6 @@
+node lastDecl1(i: int32) returns (o: int32 last = 42) 
+var lival: int32;
+let
+  lival = 1 + last 'o;
+  o = lival + i;
+tel 

@@ -1,0 +1,23 @@
+type Tenum = enum {RED, BLUE, PINK, PURPLE};
+node lastDecl(eI1: Tenum; iI2: int32) returns (iO1: int32 last = 0)
+let
+  activate when eI1 match 
+  | RED: 
+    var iV1: int32;
+	let
+      iV1 = 10 + last 'iO1; 
+	  iO1 = iV1 + iI2;
+	tel 
+  | BLUE:
+	let
+      activate if iI2 > 0
+	  then iO1 = iI2 * iI2;
+	  else iO1 = -iI2 + last 'iO1; 
+	  returns iO1;
+	tel 
+  | PINK: 
+    iO1 = 100 -> pre iO1 - 1;
+  | PURPLE:
+    -- empty 
+  returns iO1;
+tel
