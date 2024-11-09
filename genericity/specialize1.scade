@@ -1,0 +1,16 @@
+function root(a, b: int32) returns (c: int32) 
+let
+  c = SpecializeSample(a, b);
+tel
+
+function imported SpecializeSample(a, b: 'T) returns (c: 'T) where 'T numeric;
+
+function foo (a, b: int32) returns (c: int32) specialize SpecializeSample
+let
+  c = (a + b) / 2;
+tel 
+
+function bar (a, b: float32) returns (c: float32) specialize SpecializeSample 
+let 
+  c = (a + b) / 2;
+tel 

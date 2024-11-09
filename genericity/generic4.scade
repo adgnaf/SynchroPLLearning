@@ -1,0 +1,9 @@
+function root(a: float32) returns (b: float32) 
+let
+  b = generic(a);
+tel
+
+function generic(a: 'T) returns (b: 'T) where 'T float 
+let
+  b = a;
+tel 

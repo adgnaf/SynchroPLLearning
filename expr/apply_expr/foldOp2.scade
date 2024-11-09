@@ -1,0 +1,6 @@
+-- (fold operator << expr>> )(list)
+function foldOp(arr1: int8^10) returns (ival: int8)
+  ival = (fold addOp <<10>>) (1, arr1);
+
+function addOp(a, b: int8) returns (c: int8)
+  c = a + b;

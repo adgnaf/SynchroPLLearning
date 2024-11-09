@@ -1,0 +1,9 @@
+function root(a: int32) returns (b: int32) 
+let
+  b = generic(a);
+tel
+
+function generic(a: 'T) returns (b: 'T) where 'T numeric 
+let
+  b = a + a;
+tel 

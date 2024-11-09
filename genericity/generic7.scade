@@ -1,0 +1,13 @@
+node root(a: int32) returns (b: int32) 
+let
+  b = halfSucc(a);
+tel
+
+node halfSucc(a: 'T) returns (b: 'T) where 'T numeric 
+var 
+  count: int32;
+let
+  count = 0 -> pre count + 1;
+  -- polymorphic literals 
+  b = if (count mod 2 = 0) then (a + (1: 'T)) else a;
+tel

@@ -1,0 +1,24 @@
+node root(a1, b1: int32; a2, b2: int8^2) returns (c1: int32; c2: int8^2) 
+let
+  c1 = node1(a1, b1);
+  c2 = node2(a2, b2);
+tel
+
+node node1(a, b: int32) returns (c: int32)
+let
+  c = generic(a, b);
+tel
+
+node node2(a, b: int8^2) returns (c: int8^2)
+let
+  c = generic(a, b);
+tel
+
+-- Root node signature can not contain polymorphic type.
+node generic(a, b: 'T) returns (c: 'T) 
+var 
+  flag: bool;
+let
+  flag = true -> not (pre flag);
+  c = if flag then a else b;
+tel
