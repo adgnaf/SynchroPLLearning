@@ -1,0 +1,5 @@
+function sum_scalar(a,b: int32) returns (c: int32)
+  c = a + b;
+
+function mapOp(t,u: int32^3) returns (v: int32^3)
+  v = (map sum_scalar <<3>>)(t, u);

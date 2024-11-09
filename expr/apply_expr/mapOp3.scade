@@ -1,0 +1,7 @@
+function mult_scalar(a,b: int32) returns (c: int32)
+  c = a * b;
+
+function mapOp(x: int32; t: int32^3) returns (u: int32^3)
+let
+  u = (map mult_scalar <<3>>)(x^3, t);
+tel
