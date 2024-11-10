@@ -1,4 +1,4 @@
-function subOp(ival1 : int8; i32val2 : int32)
+function subOp(ival1: int8; i32val2: int32)
   returns (bval : bool; i32val : int32)
 let
   i32val = i32val2 + (1 : int32);

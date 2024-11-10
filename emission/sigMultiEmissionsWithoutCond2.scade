@@ -1,4 +1,4 @@
-function sigMultiEmissionsWithoutCond2() returns (ival1 : int8)
+function sigMultiEmissionsWithoutCond2() returns (ival1: int8)
 sig sig1, sig2;
 let
   emit ('sig1, 'sig2);

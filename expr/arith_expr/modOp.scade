@@ -1,4 +1,4 @@
-function modOp(ival1 : int8; ival2 : int8) returns (ival3 : int8)
+function modOp(ival1, ival2 : int8) returns (ival3 : int8)
 let  
   ival3 = ival1 mod ival2;
 tel

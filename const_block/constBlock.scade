@@ -3,7 +3,7 @@ CIVAL : int8 = 0;
 CBVAL : bool = false;
 CFVAL : float32 = 0.0;
 
-function constBlock() returns (ival : int8; bval : bool; fval : float32)
+function constBlock() returns (ival: int8; bval: bool; fval: float32)
 let
   ival = CIVAL;
   bval = CBVAL;

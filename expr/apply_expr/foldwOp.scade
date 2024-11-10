@@ -1,4 +1,4 @@
-function subOp(ival : int32) returns (bval : bool; ival2 : int32)
+function subOp(ival: int32) returns (bval : bool; ival2 : int32)
 let
   bval = ival < 42;
   ival2 = ival;

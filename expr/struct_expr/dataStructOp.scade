@@ -1,6 +1,6 @@
 type FooT = { ival : int8, bval : bool };
 
-function dataStructOp(ival : int8; bval : bool) returns (foo : FooT)
+function dataStructOp(ival: int8; bval: bool) returns (foo : FooT)
 let  
   foo = { ival: ival, bval: bval};
 tel

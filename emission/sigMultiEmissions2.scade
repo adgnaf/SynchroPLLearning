@@ -1,4 +1,4 @@
-function sigMultiEmissions2(bval1 : bool) returns (ival1 : int8)
+function sigMultiEmissions2(bval1: bool) returns (ival1: int8)
 sig sig1, sig2;
 let
   emit ('sig1, 'sig2) if bval1;

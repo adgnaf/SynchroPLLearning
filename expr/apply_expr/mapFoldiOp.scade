@@ -3,7 +3,7 @@ let
   o_ival1, o_ival2 = (mapfoldi 2 subOp <<10>>)(42, 24);
 tel
 
-function subOp(in_ival1 : int32; in_ival2 : int32; idx : int32)
+function subOp(in_ival1, in_ival2, idx : int32)
   returns (o_ival1 : int32; o_ival2 : int32)
 let  
   o_ival1 = in_ival1 + in_ival2;

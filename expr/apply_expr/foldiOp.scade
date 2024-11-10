@@ -1,4 +1,4 @@
-function foldiOp() returns (ival : int8)
+function foldiOp() returns (ival: int8)
 let  
   ival = (foldi $+$ <<10>>)(0);
 tel
