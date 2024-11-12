@@ -1,0 +1,10 @@
+type T = enum {a, b, c};
+node whenBlkSample(x: T) returns (y: T last = b)
+let
+  -- resolve the causality issue. 
+  activate when last 'y match
+  | a: y = a -> pre(y);
+  | b: y = x;
+  | c: -- empty
+  returns ..;
+tel

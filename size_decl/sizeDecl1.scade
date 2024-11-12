@@ -1,0 +1,15 @@
+const
+A : int8 = 1;
+B : int8 = 2;
+C : int8 = 3;
+
+function (arr: int64^6) returns (o: int64)
+let
+  -- static size expression 
+  o = (subOp <<A+B+C>>)(arr);
+tel
+
+function subOp<<n>> (arr: int64^n) returns (o: int64)
+let 
+  o = (fold $+$ <<n>>)(0, arr);
+tel

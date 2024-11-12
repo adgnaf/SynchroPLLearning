@@ -1,0 +1,9 @@
+const
+A : int64 = 2;
+B : int64 = 4;
+
+-- `8` is evaluated in generated code 
+function unsignedN (i: unsigned <<A * 2 + B>>) returns (o: uint8)
+let 
+  o = i;
+tel
