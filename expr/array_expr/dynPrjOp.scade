@@ -1,4 +1,13 @@
-function dynPrjOp(arr1 : int8^3; idx : int8) returns (ival : int8)
+const 
+C1 : int8 = 24;
+C3 : int8 = 42;
+
+function dynPrjOp(arr1: int8^3; idx: int8; idx2: int16; idx3: int32; idx4: int64) 
+returns (ival, ival1, ival2, ival3, ival4: int8)
 let  
-  ival = (arr1 . [idx] default 0);
+  ival = (arr1.[idx] default 0);
+  ival1 = (arr1.[idx2] default 0);
+  ival2 = (arr1.[idx3] default 0);
+  ival3 = (arr1.[idx4] default 0);
+  ival4 = (arr1.[C1+C3] default 0);
 tel

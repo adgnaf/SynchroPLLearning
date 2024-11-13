@@ -1,0 +1,9 @@
+const 
+C1: int8 = 1;
+C2: int8 = 2;
+
+node timesOp(bval1: bool) returns (bval2: bool)
+let
+  -- size expr is evaluated in gen code
+  bval2 = (C1 + C2) times bval1;
+tel

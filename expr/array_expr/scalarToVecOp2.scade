@@ -1,0 +1,8 @@
+const 
+C1 : int8 = 1;
+C3 : int8 = 2;
+
+function scalarToVecOp() returns (arr: int8^(C3 *2))
+let  
+  arr = 42^(C1 * 2 + C3);
+tel
