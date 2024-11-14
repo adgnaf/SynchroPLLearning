@@ -1,0 +1,5 @@
+function mixedConstructor(i: int32^2; val: int32) returns (o: int32^2)
+let  
+  -- index out of range, only copy occurs
+  o = (i with [2] = val);
+tel

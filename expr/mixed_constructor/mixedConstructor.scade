@@ -1,0 +1,7 @@
+type
+T1 = {a: int32, b: int32, c: int32};
+
+function mixedConstructor(i: T1; val: int32) returns (o: T1)
+let  
+  o = (i with .a = val);
+tel
