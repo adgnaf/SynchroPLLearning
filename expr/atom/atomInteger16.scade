@@ -1,4 +1,4 @@
-function atomInteger16() returns (ival2 : int8)
+function atomInteger16() returns (ival2: int8)
 let  
   ival2 = 0x10;
 tel

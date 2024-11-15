@@ -4,7 +4,7 @@ let
   ival, arr2= (mapw subOp <<10>> if bval default (1))(arr1);
 tel
 
-function subOp(ival1 : int8) returns (bval : bool; ival2 : int8)
+function subOp(ival1: int8) returns (bval: bool; ival2: int8)
 let
   bval = ival1 < 42;
   ival2 = ival1;

@@ -1,4 +1,4 @@
-function typeExprChar(ival1 : char) returns (ival2 : char)
+function typeExprChar(ival1: char) returns (ival2: char)
 let  
   ival2 = ival1;
 tel

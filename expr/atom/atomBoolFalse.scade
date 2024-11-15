@@ -1,4 +1,4 @@
-function atomBoolFalse() returns (ival2 : bool)
+function atomBoolFalse() returns (ival2: bool)
 let  
   ival2 = false;
 tel

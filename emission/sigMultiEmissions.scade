@@ -1,4 +1,4 @@
-function sigMultiEmissions(bval1, bval2: bool) returns (ival1 : int8)
+function sigMultiEmissions(bval1, bval2: bool) returns (ival1: int8)
 sig
   Signal1;
 let

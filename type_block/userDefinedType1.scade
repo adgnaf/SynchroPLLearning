@@ -5,8 +5,8 @@ MyArrT2 = int8^2^3;
 MyArrT3 = MyArrT1^2;
 MyArrT4 = MyArrT2^2;
 
-function userDefinedType1(arr_t1 : MyArrT1; arr_t3 : MyArrT3)
-  returns (arr_t2 : MyArrT2; arr_t4 : MyArrT4)
+function userDefinedType1(arr_t1: MyArrT1; arr_t3: MyArrT3)
+  returns (arr_t2: MyArrT2; arr_t4: MyArrT4)
 let
   arr_t2= arr_t1;
   arr_t4= arr_t3;

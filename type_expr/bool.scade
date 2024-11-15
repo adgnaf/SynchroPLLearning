@@ -1,4 +1,4 @@
-function typeExprBool(ival1 : bool) returns (ival2 : bool)
+function typeExprBool(ival1: bool) returns (ival2: bool)
 let  
   ival2 = ival1;
 tel

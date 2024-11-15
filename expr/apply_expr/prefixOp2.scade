@@ -6,7 +6,7 @@ let
 				);
 tel
 
-function addOp(ival1, ival2 : int8) returns (ival3 : int8)
+function addOp(ival1, ival2: int8) returns (ival3: int8)
 let  
   ival3 = ival1 + ival2;
 tel

@@ -2,8 +2,8 @@ type
 myStructT1 = { ival : int8, bval : bool };
 myStructT2 = { t1 : myStructT1, bval : int8 };
 
-function userDefinedStruct(in_t1 : myStructT1; in_t2 : myStructT2)
-  returns (o_t1 : myStructT1; o_t2 : myStructT2)
+function userDefinedStruct(in_t1: myStructT1; in_t2: myStructT2)
+  returns (o_t1: myStructT1; o_t2: myStructT2)
 let
   o_t1= in_t1;
   o_t2= in_t2;

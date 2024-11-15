@@ -1,5 +1,5 @@
-node stateMachineSynchro(ival1, ival2, ival3 : int8)
-  returns (ival4 : int8)
+node stateMachineSynchro(ival1, ival2, ival3: int8)
+  returns (ival4: int8)
 let
   automaton myStateMachine
     initial state State1

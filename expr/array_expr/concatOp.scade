@@ -1,4 +1,4 @@
-function concatOp(arr1 : int8^2; arr2 : int8^3; arr3 : int8^4)
+function concatOp(arr1: int8^2; arr2: int8^3; arr3: int8^4)
   returns (arr4 : int8^9)
 let  
   arr4 = arr1 @ arr2 @ arr3;

@@ -3,7 +3,7 @@ let
   ival, arr2 = (mapwi subOp <<10>> if true default (0))(arr1);
 tel
 
-function subOp(idx, bound : int8) returns (bval : bool; ival : int8)
+function subOp(idx, bound: int8) returns (bval: bool; ival: int8)
 let  
   bval = idx < bound;
   ival = idx;

@@ -1,4 +1,4 @@
-function atomTypedFloat() returns (fval : float32)
+function atomTypedFloat() returns (fval: float32)
 let  
   fval = 42.42_f32;
 tel

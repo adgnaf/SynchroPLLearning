@@ -1,9 +1,9 @@
-function restartOp(ival1, ival2 : int8; bval : bool) returns (ival3 : int8)
+function restartOp(ival1, ival2: int8; bval: bool) returns (ival3: int8)
 let
   ival3 = (restart subOp every bval)(ival1, ival2);
 tel
 
-function subOp(ival1, ival2 : int8) returns (ival3 : int8)
+function subOp(ival1, ival2: int8) returns (ival3: int8)
 let  
   ival3 = ival1 + ival2;
 tel

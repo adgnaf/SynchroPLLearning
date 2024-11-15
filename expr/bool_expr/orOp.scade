@@ -1,4 +1,4 @@
-function orOp(bval1, bval2 : bool) returns (bval3 : bool)
+function orOp(bval1, bval2: bool) returns (bval3: bool)
 let
   bval3 = bval1 or bval2;
 tel

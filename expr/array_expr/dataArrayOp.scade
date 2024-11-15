@@ -1,5 +1,5 @@
-function dataArrayOp(ival1, ival2, ival3 : int8)
-  returns (arr : int8^3)
+function dataArrayOp(ival1, ival2, ival3: int8)
+  returns (arr: int8^3)
 let  
   arr = [ival1, ival2, ival3];
 tel

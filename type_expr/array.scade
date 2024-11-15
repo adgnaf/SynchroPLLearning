@@ -1,4 +1,4 @@
-function typeExprArray(ival1 : int8^42) returns (ival2 : int8^42)
+function typeExprArray(ival1: int8^42) returns (ival2: int8^42)
 let  
   ival2 = ival1;
 tel

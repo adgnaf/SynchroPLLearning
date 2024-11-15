@@ -1,4 +1,4 @@
-function typeExprFloat64(ival1 : float64) returns (ival2 : float64)
+function typeExprFloat64(ival1: float64) returns (ival2: float64)
 let  
   ival2 = ival1;
 tel

@@ -1,4 +1,4 @@
-function typeExprUint32(ival1 : uint32) returns (ival2 : uint32)
+function typeExprUint32(ival1: uint32) returns (ival2: uint32)
 let  
   ival2 = ival1;
 tel

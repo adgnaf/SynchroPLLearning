@@ -1,4 +1,4 @@
-function gtOrEqOp(ival1, ival2 : int8) returns (bval : bool)
+function gtOrEqOp(ival1, ival2: int8) returns (bval: bool)
 let  
   bval = ival1 >= ival2;
 tel

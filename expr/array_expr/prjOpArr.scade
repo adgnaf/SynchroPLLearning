@@ -1,4 +1,4 @@
-function PrjOpArr(arr : int8^3) returns (ival : int8)
+function PrjOpArr(arr: int8^3) returns (ival: int8)
 let
   ival = arr[2];
 tel

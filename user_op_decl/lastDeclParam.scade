@@ -1,4 +1,4 @@
-node lastDecl(ival1 : bool last = false) returns (ival2 : bool)
+node lastDecl(ival1: bool last = false) returns (ival2: bool)
 let  
   ival2 = ival1;
 tel
