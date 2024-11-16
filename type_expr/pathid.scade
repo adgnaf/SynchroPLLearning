@@ -1,0 +1,11 @@
+package P1
+  package P2
+    type 
+	  T1 = int32; 
+  end;
+end;
+
+function pathid(i: P1::P2::T1) returns (o: int32)
+let  
+  o = i;
+tel

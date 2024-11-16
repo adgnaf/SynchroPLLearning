@@ -1,0 +1,5 @@
+function array(i: {a: int32, b: int8}) 
+  returns (o: {a: int32, b: int8}^3)
+let  
+  o = i^3;
+tel
