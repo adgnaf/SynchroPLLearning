@@ -1,0 +1,8 @@
+function defaultExpr(iI1: int16) 
+returns (iO1: int16)
+var 
+  L1: int16 default = 10;
+let
+  L1 = iI1;
+  iO1 = L1;
+tel 

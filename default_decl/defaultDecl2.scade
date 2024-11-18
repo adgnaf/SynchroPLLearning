@@ -1,0 +1,6 @@
+-- WAR: A default declaration in an input parameter has no use.
+function defaultExpr(iI1: int16 default = 10) 
+returns (iO1: int16)
+let
+  iO1 = iI1;
+tel 

@@ -1,0 +1,14 @@
+function defaultExpr(bval: bool; iI1: int16) 
+returns (iO1: int16 default = 10; iO2: int16 default = iO1 + 1)
+let
+  activate IfBlk1 if bval 
+    then 
+	  let
+	    iO1 = iI1;
+	  tel 
+	else 
+	  let 
+	    iO2 = iI1;
+	  tel 
+  returns ..;
+tel 
