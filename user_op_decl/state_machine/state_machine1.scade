@@ -1,4 +1,4 @@
-node StateMachine_1(bI1: bool) 
+node StateMachine(bI1: bool) 
   returns (bO1: bool default = true; iO2: int16 default = 0; bO3: bool default = false)
 let
   automaton SM1 
@@ -15,13 +15,12 @@ let
 
     state ST2 
     sig sig1; 
-    var bV1: bool; -- err: V1 has no difinition
-    until if true do 
-                  let
-                    emit 'sig1;
-                    bV1 = 'sig1;
-                    bO3 = bV1; 
-                  tel
-              restart ST1; 
+    var bV1: bool;
+	let
+	  bV1 = 'sig1;
+	  bO3 = bV1;
+	tel 
+    until if true do emit 'sig1;
+	restart ST1; 
   returns ..;
 tel
