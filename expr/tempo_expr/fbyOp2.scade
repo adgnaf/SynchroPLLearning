@@ -1,0 +1,10 @@
+-- size expression 
+const
+M: int8 = 5;
+N: int8 = 2;
+
+node fbyOp(a, b: int16)
+returns (c: int16)
+let 
+  c = fby(b; M-N; a);
+tel 

@@ -1,0 +1,10 @@
+-- list of flows 
+const
+M: int8 = 5;
+N: int8 = 2;
+
+node fbyOp(a1, a2, b1, b2: int16)
+returns (c1, c2: int16)
+let 
+  c1, c2 = fby(b1, b2; M-N; a1, a2);
+tel 

@@ -1,0 +1,5 @@
+node preOp(a, b: int16)
+returns (c: int16)
+let 
+  c = a -> pre (a -> pre (a -> pre b));
+tel 
