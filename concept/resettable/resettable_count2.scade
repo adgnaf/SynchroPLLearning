@@ -1,0 +1,5 @@
+node count () returns (c: uint64) 
+  c = 0 -> (1 + pre c);
+  
+node resettable_count (r: bool) returns (c: uint64) 
+  c = (restart count every r)();

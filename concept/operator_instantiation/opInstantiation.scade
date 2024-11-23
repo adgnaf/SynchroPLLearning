@@ -1,0 +1,10 @@
+function N1 (x,y: float64) returns (sum, prod: float64) 
+let
+  sum = x + y;
+  prod = x * y;
+tel 
+
+node N2(a: float64) returns (b,c: float64) 
+let
+  b, c = N1(a, a -> pre a); 
+tel

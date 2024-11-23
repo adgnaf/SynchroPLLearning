@@ -1,0 +1,4 @@
+node N2(a: float64) returns (b,c: float64) 
+let
+  b,c = (a + (a -> pre a), a * (a -> pre a));
+tel 

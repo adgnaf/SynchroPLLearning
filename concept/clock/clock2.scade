@@ -1,0 +1,5 @@
+node count() returns (c: uint64)
+  c = 0 -> (1 + pre c);
+  
+node clockedCount(clock h: bool) returns (c: uint64) 
+  c = merge(h; count(() when h); (0 -> pre c) when not h);

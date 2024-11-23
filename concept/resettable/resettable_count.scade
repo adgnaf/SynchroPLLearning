@@ -1,0 +1,2 @@
+node resettable_count (r: bool) returns (c: uint64) 
+  c = if r then 0 else (0 -> (1 + pre c));

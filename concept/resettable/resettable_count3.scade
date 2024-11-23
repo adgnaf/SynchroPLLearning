@@ -1,0 +1,8 @@
+node count() returns (c: int32) c = 0 -> (1 + pre c);
+node double () returns (s: int32) s = 2 * count();
+
+node sample(b: bool) returns (s1,s2: int32) 
+let
+  s1 = (restart count every b)();
+  s2 = (restart double every b)();  
+tel
