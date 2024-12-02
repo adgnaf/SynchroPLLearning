@@ -1,0 +1,4 @@
+node preExpr(i1,i2: int) returns (o: int) 
+let
+  o = i1 -> pre i2;
+tel 

@@ -1,0 +1,4 @@
+function realExpr(i: real) returns (o: real)
+let 
+  o = i / real(2);
+tel 

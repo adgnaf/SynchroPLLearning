@@ -1,0 +1,4 @@
+node rightArrow(i1,i2: int) returns (o: int)
+let 
+  o = i1 -> i2;
+tel 

@@ -1,0 +1,4 @@
+function intExpr (i: int) returns (o: int)
+let
+  o = i + int (2.0);
+tel
