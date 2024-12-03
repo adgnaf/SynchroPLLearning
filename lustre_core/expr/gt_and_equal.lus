@@ -1,0 +1,4 @@
+function gt_and_equal(a,b: int) returns (c: bool)
+let 
+  c = a >= b;
+tel 

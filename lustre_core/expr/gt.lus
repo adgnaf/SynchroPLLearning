@@ -1,0 +1,4 @@
+function gt(a,b: int) returns (c: bool) 
+let 
+  c = a > b;
+tel 

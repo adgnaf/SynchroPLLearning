@@ -1,0 +1,4 @@
+function lessThan(a,b: int) returns (c: bool) 
+let
+  c = a < b;
+tel

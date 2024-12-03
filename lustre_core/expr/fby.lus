@@ -1,0 +1,4 @@
+node fbyExpr(i: int) returns (o: int) 
+let 
+  o = 0 fby i;
+tel 

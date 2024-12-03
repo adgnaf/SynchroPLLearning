@@ -1,0 +1,4 @@
+function right_arrow_bool(a,b: bool) returns (c: bool) 
+let 
+  c = a => b;
+tel 
