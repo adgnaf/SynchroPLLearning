@@ -1,0 +1,23 @@
+-- (iterator operator << expr >> ) (list)
+function mapOp(arr1,arr2: int8 ^ 3) returns (
+    oarr1,oarr2,oarr3,oarr4,oarr5: int8 ^ 3; 
+    oarr6,oarr7,oarr8,oarr9,oarr10,oarr11: bool ^ 3;
+    oarr12,oarr13: int8 ^ 3)
+let 
+  -- arith: $+$, $-$, $*$, $/$, $mod$
+  oarr1 = (map $+$ << 3 >> )(arr1, arr2);
+  oarr2 = (map $-$ << 3 >> )(arr1, arr2); 
+  oarr3 = (map $*$ << 3 >>) (arr1, arr2);
+  oarr4 = (map $/$ << 3 >>) (arr1, arr2);
+  oarr5 = (map $mod$ << 3 >>)(arr1, arr2);
+  oarr12 = (map +$ << 3 >>) (arr1);
+  oarr13 = (map -$ << 3 >>) (arr1);
+
+  -- comparison: $=$, $<>$, $<$, $>$, $<=$, $>=$ 
+  oarr6 = (map $=$ << 3 >>) (arr1, arr2);
+  oarr7 = (map $<>$ << 3 >>) (arr1, arr2);
+  oarr8 = (map $<$ << 3 >>) (arr1, arr2);
+  oarr9 = (map $>$ << 3 >>) (arr1, arr2);
+  oarr10 = (map $>=$ << 3 >>) (arr1, arr2);
+  oarr11 = (map $<=$ << 3 >>) (arr1, arr2);
+tel 

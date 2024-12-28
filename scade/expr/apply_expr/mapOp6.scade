@@ -1,0 +1,9 @@
+-- (iterator operator <<expr>>) (list)
+function mapOp(arr1,arr2: bool ^ 1) returns (oarr1,oarr2,oarr3,oarr4: bool ^ 1) 
+let 
+  -- bool: $and$, $or$, $xor$, not$
+  oarr1 = (map $and$ << 1 >>) (arr1,arr2);
+  oarr2 = (map $or$ << 1 >>) (arr1, arr2);
+  oarr3 = (map $xor$ << 1 >>) (arr1, arr2);
+  oarr4 = (map not$ << 1 >>) (arr1);
+tel 

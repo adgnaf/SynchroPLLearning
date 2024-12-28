@@ -1,0 +1,2 @@
+function unaryPlusOp(i: int8) returns (o: int8) 
+	o = + i;

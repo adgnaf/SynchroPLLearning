@@ -1,0 +1,11 @@
+-- (iterator operator <<expr>>) (list) 
+function mapOp(arr1,arr2: uint8 ^ 1) returns (oarr1,oarr2,oarr3,oarr4,oarr5,oarr6: uint8 ^ 1)
+let 
+  -- bitwise: $land$, $lor$, $lxor$, $lsl$, $lsr$, lnot$
+  oarr1 = (map $land$ <<1>>) (arr1, arr2);
+  oarr2 = (map $lor$ <<1>>) (arr1, arr2);
+  oarr3 = (map $lxor$ <<1>>) (arr1, arr2);
+  oarr4 = (map $lsl$ <<1>>) (arr1, arr2);
+  oarr5 = (map $lsr$ <<1>>) (arr1, arr2);
+  oarr6 = (map lnot$ <<1>>) (arr1);
+tel 
