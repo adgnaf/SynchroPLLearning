@@ -1,4 +1,4 @@
--- (fold operator << expr >>) ( list )
+-- (fold operator << expr >>) ( accumulator, input_arrays )
 function foldOp(arr1: int8^10) returns (ival: int8)
 let  
   ival = (fold $+$ <<10>>)(1, arr1);

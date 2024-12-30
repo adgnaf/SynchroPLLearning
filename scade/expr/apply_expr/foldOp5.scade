@@ -1,0 +1,11 @@
+-- (fold operator <<expr>>) (accumulator, input_arrays) 
+function foldOp(in_arr: int32 ^ 2) returns 
+  (o_arr1,o_arr2,o_arr3,o_arr4,o_arr5: int32)
+let 
+  -- arithmetic: $+$, $-$, $*$, $/$, $mod$
+  o_arr1 = (fold $+$ <<2>>) (42, in_arr);
+  o_arr2 = (fold $-$ <<2>>) (42, in_arr);
+  o_arr3 = (fold $*$ <<2>>) (42, in_arr);
+  o_arr4 = (fold $/$ <<2>>) (42, in_arr);
+  o_arr5 = (fold $mod$ <<2>>) (42, in_arr);  
+tel 

@@ -1,0 +1,10 @@
+-- (fold operator <<expr>>) (accumulator, input_arrays)
+function foldOp(in_arr: bool ^ 2) returns 
+    (o1,o2: bool)
+let 
+  -- $=$, $<>$
+  o1 = (fold $=$ << 2 >>) (false, in_arr);
+  o2 = (fold $<>$ << 2 >>) (false, in_arr);
+  
+  -- $>$, $>=$, $<$, $<=$ can not be used as operator for fold 
+tel 
