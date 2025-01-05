@@ -1,0 +1,12 @@
+-- (fold operator <<expr>>)(accumulator, arrays)
+-- $land$, $lor$, $lxor$
+function foldOp(acc: uint8; i1,i2,i3,i4,i5: uint8 ^3) returns (o1,o2,o3,o4,o5: uint8)
+let
+  o1 = (fold $land$ <<3>>)(acc, i1);
+  o2 = (fold $lor$ <<3>>)(acc, i2);
+  o3 = (fold $lxor$ <<3>>)(acc, i3);
+  o4 = (fold $lsl$ <<3>>)(acc, i4);
+  o5 = (fold $lsr$ <<3>>)(acc, i5);
+tel
+
+

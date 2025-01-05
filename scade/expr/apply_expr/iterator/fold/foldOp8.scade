@@ -1,0 +1,8 @@
+-- (fold operator <<expr>>)(accumulator, arrays)
+-- $and$, $or$, $xor$
+function foldOp(acc: bool; i1,i2,i3: bool ^3) returns (o1,o2,o3: bool ^3)
+let
+  o1 = (fold $and$ <<3>>)(acc, i1);
+  o2 = (fold $or$ <<3>>)(acc, i2);
+  o3 = (fold $xor$ <<3>>)(acc, i3);
+tel 

@@ -1,0 +1,12 @@
+-- (mapi operator <<expr>>)(arrays)
+-- operator is called as operator(index, arrays)
+-- $+$, $-$, $/$, $*$, $mod$
+function mapiOp(i1,i2,i3,i4,i5: int8 ^3) returns (o1,o2,o3,o4,o5: int8 ^3) 
+let
+  o1 = (mapi $+$ <<3>>)(i1);
+  o2 = (mapi $-$ <<3>>)(i2);
+  o3 = (mapi $/$ <<3>>)(i3);
+  o4 = (mapi $*$ <<3>>)(i4);
+  o5 = (mapi $mod$ <<3>>)(i5);
+tel
+

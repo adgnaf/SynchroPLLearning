@@ -1,0 +1,8 @@
+-- (iterator operator <<expr>>) (list)
+function mapOp(arr1,arr2: int8 ^2 ^3) returns (oarr1: int8 ^4 ^3)
+let
+  oarr1 = (map Op <<3>>) (arr1,arr2);
+tel 
+
+function Op #pragma kcg expand #end (i1,i2: int8 ^2) returns (o: int8 ^4)
+  o = i1 @ i2;
