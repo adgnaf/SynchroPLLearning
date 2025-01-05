@@ -1,0 +1,51 @@
+/*
+extern void N(kcg_int8 x, kcg_int8 *y, kcg_int8 *z);
+*/
+
+function #pragma kcg separate_io #end 
+ N(x: int8) returns (y,z: int8)
+let 
+  y = x;
+  z = x;
+tel
+
+/*
+typedef struct { kcg_int8 x; } inC_N2;
+
+typedef struct {
+  kcg_int8 y;
+  kcg_int8 z;
+} outC_N2;
+
+extern void N2(inC_N2 *inC, outC_N2 *outC);
+*/
+
+function 
+ N2(x: int8) returns (y,z: int8)
+let
+  y = x;
+  z = x;
+tel 
+
+/*
+extern kcg_int8 M(kcg_int8 x);
+*/
+
+function #pragma kcg separate_io #end 
+M (x: int8) returns (y: int8)
+  y = x;
+  
+  
+/*
+typedef struct { kcg_int8 x; } inC_M2;
+
+typedef struct {
+  kcg_int8 y;
+} outC_M2;
+
+extern void M2(inC_M2 *inC, outC_M2 *outC);
+*/
+
+function 
+M2 (x: int8) returns (y: int8)
+  y = x;
