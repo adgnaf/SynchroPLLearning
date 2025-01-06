@@ -1,0 +1,15 @@
+-- idx, arrs = (mapwi operator <<expr>> if expr default expr)(list) 
+-- bool_guard, outputs = op(idx, inputs)
+
+function mapwiOp(arr1: int8^10) returns (ival: int8; arr2: int8^10)
+let
+  ival, arr2 = (mapwi subOp <<10>> if true default (0))(arr1);
+tel
+
+function 
+#pragma kcg expand #end 
+subOp(idx, bound: int8) returns (bval: bool; ival: int8)
+let  
+  bval = idx < bound;
+  ival = idx;
+tel

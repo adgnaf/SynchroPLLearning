@@ -1,0 +1,6 @@
+-- idx, v1, ..., vm = 
+-- (mapw operator <<expr>> if initcond default (d1,...,dm))
+-- (A1, ..., An);
+
+-- cond, v1, ..., vm = op(A1[i],...An[i])
+

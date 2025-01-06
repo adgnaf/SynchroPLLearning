@@ -1,0 +1,16 @@
+-- (mapw operator <<size>> if expr default expr)( list )
+-- Two boolean guards. One guard at mapw level, one guard at operator level. 
+
+function mapwOp(arr1 : int8^10; bval : bool)
+  returns (ival : int8; arr2 : int8^10)
+let
+  ival, arr2 = (mapw subOp <<10>> if bval default (1))(arr1);
+tel
+
+function 
+#pragma kcg expand #end 
+subOp(ival1: int8) returns (bval: bool; ival2: int8)
+let
+  bval = ival1 < 42;
+  ival2 = ival1;
+tel
