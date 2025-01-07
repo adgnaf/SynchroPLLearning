@@ -1,8 +1,7 @@
 package P1
   package P2
     function packageMultiLayers(ival1, ival2 : int8) returns (ival3 : int8)
-    let
-		ival3 = ival1 + ival2;
-    tel
+		  ival3 = ival1 + ival2;
+
   end;
 end;

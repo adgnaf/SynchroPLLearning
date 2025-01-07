@@ -1,4 +1,2 @@
-function orOp(bval1, bval2: bool) returns (bval3: bool)
-let
-  bval3 = bval1 or bval2;
-tel
+function orOp(bval1, bval2: bool) returns (o: bool)
+  o = bval1 or bval2;

@@ -1,4 +1,2 @@
-function atomBoolTrue() returns (ival2: bool)
-let  
-  ival2 = true;
-tel
+function atomBoolTrue() returns (o: bool)
+  o = true;

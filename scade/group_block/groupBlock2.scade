@@ -3,6 +3,4 @@ G1 = (int32, int32, int32);
 G2 = (bool, G1);  
 
 function groupBlock2() returns (o: G2) 
-let
   o = (true, 42, 42, 42);
-tel

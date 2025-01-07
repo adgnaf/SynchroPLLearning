@@ -1,4 +1,2 @@
-function notOp(bval1: bool) returns (bval2: bool)
-let
-  bval2 = not bval1;
-tel
+function notOp(bval1: bool) returns (o: bool)
+  o = not bval1;

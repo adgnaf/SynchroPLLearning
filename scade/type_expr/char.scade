@@ -1,4 +1,2 @@
-function typeExprChar(ival1: char) returns (ival2: char)
-let  
-  ival2 = ival1;
-tel
+function typeExprChar(i: char) returns (o: char)
+  o = i;

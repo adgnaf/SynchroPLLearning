@@ -1,4 +1,2 @@
-function sharpOp(bval1, bval2, bval3: bool) returns (bval4: bool)
-let
-   bval4 = #(bval1, bval2, bval3);
-tel
+function sharpOp(bval1, bval2, bval3: bool) returns (o: bool)
+   o = #(bval1, bval2, bval3);

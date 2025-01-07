@@ -5,6 +5,4 @@ C : int64 = A * 2 + B; -- 8
 
 -- `8` is evaluated in generated code 
 function signedN (i: signed <<C>>) returns (o: int8)
-let 
   o = i;
-tel

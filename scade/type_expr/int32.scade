@@ -1,4 +1,2 @@
-function typeExprInt32(ival1: int32) returns (ival2: int32)
-let  
-  ival2 = ival1;
-tel
+function typeExprInt32(i: int32) returns (o: int32)
+  o = i;

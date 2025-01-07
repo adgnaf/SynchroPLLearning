@@ -5,7 +5,5 @@ package P1
   end;
 end;
 
-function pathid(i: P1::P2::T1) returns (o: int32)
-let  
+function pathid(i: P1::P2::T1) returns (o: int32) 
   o = i;
-tel

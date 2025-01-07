@@ -1,4 +1,2 @@
-function idExpr(ival1: int8) returns (ival2: int8)
-let  
-  ival2 = ival1;
-tel
+function idExpr(ival1: int8) returns (o: int8)
+  o = ival1;

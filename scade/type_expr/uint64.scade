@@ -1,4 +1,2 @@
-function typeExprUint64(ival1: uint64) returns (ival2: uint64)
-let  
-  ival2 = ival1;
-tel
+function typeExprUint64(i: uint64) returns (o: uint64)
+  o = i;

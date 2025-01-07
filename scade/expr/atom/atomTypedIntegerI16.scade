@@ -1,4 +1,2 @@
-function atomTypedIntegerI16() returns (ival2: int16)
-let  
-  ival2 = 42_i16;
-tel
+function atomTypedIntegerI16() returns (o: int16)
+  o = 42_i16;

@@ -1,4 +1,2 @@
-function landOp(ui8val1, ui8val2: uint8) returns (ui8val3: uint8)
-let  
-  ui8val3 = ui8val1 land ui8val2;
-tel
+function landOp(i1, i2: uint8) returns (o: uint8)
+  o = i1 land i2;

@@ -1,6 +1,4 @@
 group G = (int32, int32, int32);
 
 function groupBlock() returns (o: G) 
-let
   o = (42, 42, 42);
-tel

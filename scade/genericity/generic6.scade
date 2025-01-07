@@ -1,9 +1,6 @@
 function root(a: uint8) returns (b: uint8) 
-let
   b = generic(a);
-tel
+
 
 function generic(a: 'T) returns (b: 'T) where 'T unsigned 
-let
   b = a;
-tel 

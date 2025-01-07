@@ -1,5 +1,4 @@
 node preOp()
 returns (o: int32 )
-let 
   o = 1 -> (1 + pre o);
-tel 
+

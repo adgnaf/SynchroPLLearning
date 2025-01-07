@@ -1,4 +1,2 @@
 function transposeOp(arr1: int8^2^3^4) returns (arr2: int8^3^2^4)
-let
   arr2 = transpose(arr1; 2; 3);
-tel

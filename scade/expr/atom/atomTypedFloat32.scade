@@ -1,4 +1,2 @@
-function atomTypedFloat() returns (fval: float32)
-let  
-  fval = 42.42_f32;
-tel
+function atomTypedFloat() returns (o: float32)
+  o = 42.42_f32;

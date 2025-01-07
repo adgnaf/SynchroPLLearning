@@ -1,4 +1,3 @@
 node timesOp() returns (o: int64)
-let
   o = if (3 times true) then 42 else 24;
-tel 
+ 

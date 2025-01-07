@@ -5,14 +5,12 @@ let
 tel
 
 node node1(a, b: int32) returns (c: int32)
-let
   c = generic(a, b);
-tel
+
 
 node node2(a, b: int8^2) returns (c: int8^2)
-let
   c = generic(a, b);
-tel
+
 
 -- Root node signature can not contain polymorphic type.
 node generic(a, b: 'T) returns (c: 'T) 

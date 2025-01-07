@@ -1,6 +1,4 @@
 type myEnumType = enum { YELLOW, BLUE };
 
 function enumTypeDef(in_enum: myEnumType) returns (out_enum: myEnumType)
-let
   out_enum = in_enum;
-tel

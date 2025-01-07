@@ -4,6 +4,5 @@ B : int64 = 2;
 C : int64 = A + B; -- size expr, expr is maintained in gen code
 
 function constBlk () returns (o: int64)
-let 
   o = C;
-tel
+

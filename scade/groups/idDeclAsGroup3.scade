@@ -4,12 +4,8 @@ group
 G1 = (bool, int32, int32);  
 
 function subOp() returns (o: G1)
-
-let
   o = (true, 42, 24);
-tel
+
 
 function idDeclAsGroup3() returns (o1: bool; o2, o3: int32) 
-let
   o1, o2, o3 = subOp();
-tel

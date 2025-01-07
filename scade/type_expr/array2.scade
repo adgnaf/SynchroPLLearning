@@ -3,6 +3,4 @@ function typeExprArray(arr_i: int32 ^ 2) returns (arr_o: int32 ^ 2)
 
 -- n: 4, n/2 -> 2, 2 is evaluated in gen code
 function subOp <<n>> (arr_i: int32 ^ 2) returns (arr_o: int32 ^ (n/2))
-let 
   arr_o = arr_i;
-tel

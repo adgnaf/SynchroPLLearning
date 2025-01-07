@@ -1,4 +1,2 @@
-function typeExprFloat64(ival1: float64) returns (ival2: float64)
-let  
-  ival2 = ival1;
-tel
+function typeExprFloat64(i: float64) returns (o: float64)
+  o = i;

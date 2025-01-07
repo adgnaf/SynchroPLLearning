@@ -1,4 +1,3 @@
 function mixedConstructor(i: int32^2; val,val2: int32) returns (o: int32^2)
-let  
   o = ((i with [0] = val) with [1] = val2);
-tel
+

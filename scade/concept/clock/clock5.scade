@@ -1,7 +1,7 @@
-node integr(e:int32) returns (s:int32)
+node integr(e: int32) returns (s: int32)
   s = e + (0 -> pre s);
 
-node two_instances (e:int32; clock h:bool) returns (s, t: int32) 
+node two_instances (e: int32; clock h: bool) returns (s,t: int32) 
 let
   s = integr(e); 
   t = merge (h; integr(e when h); 0 when not h);

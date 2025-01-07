@@ -1,4 +1,2 @@
 function scalarToVecOp(ival1: int8) returns (arr: int8^3)
-let
   arr = ival1^3;
-tel

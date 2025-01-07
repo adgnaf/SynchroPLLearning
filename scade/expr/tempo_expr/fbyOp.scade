@@ -1,4 +1,2 @@
-node fbyOp(ival1: int8) returns (ival2: int8)
-let  
-  ival2 = fby(ival1; 2; 3);
-tel
+node fbyOp(ival1: int8) returns (o: int8)
+  o = fby(ival1; 2; 3);

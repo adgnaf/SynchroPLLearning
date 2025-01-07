@@ -1,9 +1,6 @@
 function root(a: int8) returns (b: int8) 
-let
   b = generic(a);
-tel
+
 
 function generic(a: 'T) returns (b: 'T) where 'T signed 
-let
   b = a;
-tel 

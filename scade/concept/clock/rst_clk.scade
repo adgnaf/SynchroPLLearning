@@ -5,7 +5,7 @@ let
   s = 1 -> (1 + pre s);
 tel 
 
-node rst_clk (rst:bool; clock h:bool) returns (s:int32; t: int32 when h) 
+node rst_clk (rst: bool; clock h: bool) returns (s: int32; t: int32 when h) 
 let
   s = (restart nat every rst)();
   t = (restart nat every rst)(() when h);

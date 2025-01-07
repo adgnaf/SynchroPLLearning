@@ -1,4 +1,2 @@
-function typeExprFloat32(ival1: float32) returns (ival2: float32)
-let  
-  ival2 = ival1;
-tel
+function typeExprFloat32(i: float32) returns (o: float32)
+  o = i;

@@ -1,4 +1,2 @@
-function typeExprArray(ival1: int8^42) returns (ival2: int8^42)
-let  
-  ival2 = ival1;
-tel
+function typeExprArray(i: int8^42) returns (o: int8^42)
+  o = i;

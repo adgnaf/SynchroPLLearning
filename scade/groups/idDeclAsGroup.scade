@@ -4,11 +4,8 @@ group
 G1 = (bool, int32, int32);  
 
 function subOp(arg1: bool; arg2: int32; arg3: int32) returns (o: int32)
-let
   o = if arg1 then arg2 else arg3;
-tel
+
 
 function idDeclAsGroup(e: G1) returns (o: int32) 
-let
   o = subOp(e);
-tel

@@ -1,4 +1,2 @@
-function modOp(ival1, ival2: int8) returns (ival3: int8)
-let  
-  ival3 = ival1 mod ival2;
-tel
+function modOp(i1, i2: int8) returns (o: int8)
+  o = i1 mod i2;

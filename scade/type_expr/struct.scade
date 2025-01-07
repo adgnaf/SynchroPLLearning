@@ -1,4 +1,2 @@
-function typeExprStruct(ival1 : {f1: int8, f2: float32}) returns (ival2 : {f1: int8, f2: float32})
-let  
-  ival2 = ival1;
-tel
+function typeExprStruct(i : {f1: int8, f2: float32}) returns (o : {f1: int8, f2: float32})
+  o = i;

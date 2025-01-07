@@ -10,6 +10,4 @@ let
 tel
 
 function subOp<<n>> (arr: int64^n) returns (o: int64)
-let 
   o = (fold $+$ <<n>>)(0, arr);
-tel

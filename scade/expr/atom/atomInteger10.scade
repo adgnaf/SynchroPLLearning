@@ -1,4 +1,2 @@
-function atomInteger10() returns (ival2: int8)
-let  
-  ival2 = 42;
-tel
+function atomInteger10() returns (o: int8)
+  o = 42;

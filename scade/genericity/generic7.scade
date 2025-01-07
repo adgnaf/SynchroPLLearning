@@ -1,7 +1,6 @@
 node root(a: int32) returns (b: int32) 
-let
   b = halfSucc(a);
-tel
+
 
 node halfSucc(a: 'T) returns (b: 'T) where 'T numeric 
 var 

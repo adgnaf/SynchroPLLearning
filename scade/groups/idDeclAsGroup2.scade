@@ -13,6 +13,4 @@ let
 tel
 
 function idDeclAsGroup2(arg1: bool; arg2, arg3: int32) returns (o: int32) 
-let
   o = subOp(arg1, arg2, arg3);
-tel
