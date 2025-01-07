@@ -1,10 +1,17 @@
-function mapFoldOp(in_ival1, in_ival2 : int32)
-  returns (o_ival1, o_ival2 : int32; arr : int32^10)
+-- (mapfold [[ INTEGER ]] op <<expr>>)( list ) 
+-- (mapfold a op <<expr>>)( list )
+-- inputs of `mapfold` are at least `a` accumulators. 
+-- outputs of `mapfold` are at least `a` accumulators and 1 output array. 
+
+function mapfoldOp(in_ival1, in_ival2 : int32)
+  returns (o_ival1, o_ival2: int32; arr: int32 ^10)
 let  
   o_ival1, o_ival2, arr = (mapfold 2 subOp <<10>>)(in_ival1, in_ival2);
 tel
 
-function subOp(ival1, ival2: int32)
+function 
+#pragma kcg expand #end 
+subOp(ival1, ival2: int32)
   returns (o_ival1, o_ival2, o_ival3: int32)
 let
   o_ival1 = ival1;

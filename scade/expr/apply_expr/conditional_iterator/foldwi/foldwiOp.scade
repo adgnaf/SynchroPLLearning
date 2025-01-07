@@ -1,12 +1,16 @@
-function subOp(ival1: int8; i32val2: int32)
-  returns (bval : bool; i32val : int32)
+-- idx, acc = (foldwi operator <<expr>> if expr)(list) 
+-- bool_guard, acc = op(idx, in_acc, elems) 
+
+function foldwiOp() returns (idx: int8; acc: int32)
 let
-  i32val = i32val2 + (1 : int32);
+  idx, acc = (foldwi subOp <<10>> if true)(2);
+tel
+
+function 
+#pragma kcg expand #end 
+subOp(ival1: int8; in_acc: int32)
+  returns (bval: bool; o_acc: int32)
+let
+  o_acc = in_acc + (1 : int32);
   bval = ival1 < 42;
 tel
-
-function foldwiOp() returns (i8val : int8; i32val : int32)
-let
-  i8val, i32val = (foldwi subOp <<10>> if true)(2);
-tel
-

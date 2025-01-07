@@ -4,3 +4,14 @@
 
 -- cond, v1, ..., vm = op(A1[i],...An[i])
 
+function mapwOp(i1,i2,i3: float32 ^3) returns (idx: int32; o1,o2: float32 ^3) 
+  idx, o1, o2 = (mapw subOp <<3>> if true default 0)(i1, i2, i3);
+
+function 
+#pragma kcg expand #end 
+subOp(i1,i2,i3: float32) returns (b_guard: bool; o1,o2: float32) 
+let 
+  b_guard = (i1 + i2 + i3 = 0);
+  o1 = i1 + i2 + i3;
+  o2 = i1 + i2 - i3;
+tel 

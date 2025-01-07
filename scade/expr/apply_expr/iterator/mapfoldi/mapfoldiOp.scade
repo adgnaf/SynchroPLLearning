@@ -1,10 +1,14 @@
-function mapFoldiOp() returns (o_ival1 : int32; o_ival2 : int32)
-let  
-  o_ival1, o_ival2 = (mapfoldi 2 subOp <<10>>)(42, 24);
-tel
+-- (mapfoldi [[INTEGER]] op <<expr>>)(list)
+-- idx as a parameter at the first position. 
 
-function subOp(in_ival1, in_ival2, idx : int32)
-  returns (o_ival1 : int32; o_ival2 : int32)
+function mapFoldiOp() returns (o_ival1, o_ival2: int32)
+  o_ival1, o_ival2 = (mapfoldi 2 subOp <<10>>)(42, 24);
+
+
+function 
+#pragma kcg expand #end 
+subOp(idx, in_ival1, in_ival2: int32)
+  returns (o_ival1, o_ival2: int32)
 let  
   o_ival1 = in_ival1 + in_ival2;
   o_ival2 = idx;
