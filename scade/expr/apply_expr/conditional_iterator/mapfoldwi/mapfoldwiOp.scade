@@ -1,0 +1,14 @@
+-- output 1 accumulator and 1 array 
+function mapfoldwiOp()
+  returns (idx: int8; bval: bool; acc: int8; arr: int8 ^10) 
+  idx, bval, acc, arr = (mapfoldwi 1 subOp <<10>> if true default (42))(42);
+
+function 
+#pragma kcg expand #end 
+subOp(idx, acc: int8)
+returns (bval: bool; ival3, ival4: int8)
+let  
+  bval = idx < 42;
+  ival3 = idx + acc;
+  ival4 = acc;
+tel

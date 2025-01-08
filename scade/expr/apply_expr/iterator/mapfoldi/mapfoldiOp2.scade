@@ -1,0 +1,18 @@
+-- (mapfoldi [[INTEGER]] op <<expr>>)(list)
+-- 2 accumulators, 2 output map arrays 
+
+function mapfoldiOp(i1,i2: float32 ^10) 
+returns (o_acc1, o_acc2: float32; o_arr1, o_arr2: float32 ^10) 
+  o_acc1, o_acc2, o_arr1, o_arr2 = (mapfoldi 2 subOp <<10>>)(0, 0, i1, i2);
+
+function 
+#pragma kcg expand #end 
+subOp(idx: int8; acc1,acc2: float32; i1,i2: float32) 
+returns (o_acc1, o_acc2, o1, o2: float32) 
+let 
+  o_acc1 = if (idx mod 2 = 0) then (acc1 + i1 + i2) else acc1;
+  o_acc2 = if (idx mod 2 <> 0) then (acc2 + i1 - i2) else acc2;
+  o1 = if (idx mod 2 = 0) then i1 else i2;
+  o2 = if (idx mod 2 = 0) then i2 else i1;
+tel 
+

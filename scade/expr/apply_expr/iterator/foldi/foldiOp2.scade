@@ -1,0 +1,8 @@
+-- (foldi op <<expr>>)(acc, arrays) 
+function foldiOp(i1,i2: int8 ^3) returns (o: int8)
+   o = (foldi subOp <<3>>)(0, i1, i2);
+  
+function #pragma kcg expand #end 
+subOp(index: int8; acc: int8; elem1,elem2: int8) 
+returns (o: int8)
+  o = if (index mod 2 = 0) then (acc + elem1 + elem2) else (acc);
