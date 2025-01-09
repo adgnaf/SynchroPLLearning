@@ -1,0 +1,16 @@
+-- (foldw operator <<expr>> if expr)(list)
+-- multiple accumulators output not support
+
+function 
+foldwOp(i_acc0: float32; i1,i2: float32 ^3) 
+returns (idx: int32; acc1: float32)
+  idx, acc1 = (foldw subOp <<3>> if true)(i_acc0, i1, i2);
+
+function
+#pragma kcg expand #end 
+subOp(i_acc0: float32; i1,i2: float32) 
+returns (b_guard: bool; o_acc0: float32) 
+let 
+  b_guard = (i1 + i2 = 0);
+  o_acc0 = i_acc0 + i1 + i2;
+tel 

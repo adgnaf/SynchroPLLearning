@@ -1,0 +1,14 @@
+-- idx, arrs = (mapwi operator <<expr>> if expr default expr)(list)
+-- bool_guard, outputs = op(idx, elems) 
+
+function mapwiOp(i1,i2: float32 ^3) returns (idx: int32; o1,o2: float32 ^3)
+  idx, o1, o2 = (mapwi subOp <<3>> if true default (0,0))(i1, i2);
+
+function 
+#pragma kcg expand #end 
+subOp(idx: int32; i1,i2: float32) returns (b_guard: bool; o1,o2: float32)
+let 
+  b_guard = idx < 1;
+  o1 = i1 + i2;
+  o2 = i1 - i2;
+tel 

@@ -1,0 +1,13 @@
+-- idx, acc = (foldwi operator <<expr>> if expr)(acc, list)
+-- bool_guard, acc = op(idx, acc, elem)
+
+function foldwiOp(i1: int32 ^3) returns (idx: int32; acc: int32) 
+  idx, acc = (foldwi subOp <<3>> if true)(0, i1);
+
+function 
+#pragma kcg expand #end 
+subOp(idx: int32; in_acc: int32; i1: int32) returns (b_guard: bool; o_acc: int32) 
+let 
+  b_guard = idx < 1;
+  o_acc = if (idx mod 2 = 0) then (in_acc + i1) else (in_acc - i1);
+tel 

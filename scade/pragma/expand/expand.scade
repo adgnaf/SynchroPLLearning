@@ -4,3 +4,4 @@ function rootOp(i: int8) returns (o: int8)
 
 function #pragma kcg expand #end N(foo: int8) returns (y: int8)
   y = foo;
+
