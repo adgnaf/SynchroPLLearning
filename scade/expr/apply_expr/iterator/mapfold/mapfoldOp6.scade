@@ -1,0 +1,17 @@
+-- (mapfold [[INTEGER]] op <<expr>>)(list)
+-- multiple accumulators and maps 
+
+function mapfoldOp(i1,i2: int8 ^10) 
+returns (oacc1, oacc2: int8; oarr1, oarr2: int8 ^10)
+  oacc1, oacc2, oarr1, oarr2 = (mapfold 2 subOp <<10>>)(0, 0, i1, i2);
+
+function 
+#pragma kcg expand #end 
+subOp(i_acc1, i_acc2, i1, i2: int8) returns (o_acc1, o_acc2, o1, o2: int8)
+let 
+  o_acc1 = i_acc1 + i1 + i2;
+  o_acc2 = i_acc2 + i1 - i2;
+  o1 = i1 + i2;
+  o2 = i1 - i2;
+tel 
+

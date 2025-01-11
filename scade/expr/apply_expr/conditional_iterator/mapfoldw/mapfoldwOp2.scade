@@ -1,0 +1,14 @@
+-- idx,_, acc = (mapfoldw 1 op <<size>> if cond)(acc, As);
+-- is equivalent to 
+-- idx, acc = (foldw op <<size>> if cond) (acc, As);
+
+function mapfoldwOp(i1,i2: int32 ^3) returns (idx: int32; acc: int32)
+  idx, _, acc = (mapfoldw 1 subOp <<3>> if true default ())(0, i1, i2);
+
+function 
+#pragma kcg expand #end 
+subOp(in_acc: int32; i1, i2: int32) returns (b_guard: bool; o_acc: int32)
+let
+  b_guard = (o_acc = 42);
+  o_acc = in_acc + i1 - i2;
+tel

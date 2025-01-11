@@ -1,0 +1,16 @@
+-- idx, cond, accs, vecs = 
+-- (mapfoldw [[INTEGER]] operator <<size>> if initcond default (d...)) (exp,... A, ...) 
+
+function mapfoldwOp(i1,i2: int32 ^3) 
+returns (idx: int32; b_guard: bool; o_acc: int32; o_arr: int32 ^3)
+  idx, b_guard, o_acc, o_arr = (mapfoldw 1 subOp <<3>> if true default (0))(0, i1, i2);
+
+function 
+#pragma kcg expand #end 
+subOp(in_acc: int32; i1,i2: int32)
+returns (b_guard: bool; o_acc: int32; o: int32 ^3)
+let 
+  b_guard = (o_acc = 42);
+  o_acc = in_acc + i1 + i2;
+  o = i1 + i2;
+tel 

@@ -1,0 +1,13 @@
+-- (mapfold [[INTEGER]] op <<expr>>)(list)
+-- 2 accumulators 
+
+function mapfoldOp(i1,i2: int8 ^10) returns (o1,o2: int8)
+  o1, o2 = (mapfold 2 subOp <<10>>)(0, 0, i1, i2);
+
+function 
+#pragma kcg expand #end 
+subOp(acc1, acc2, i1, i2: int8) returns (oacc1, oacc2: int8)
+let 
+  oacc1 = acc1 + i1 + i2;
+  oacc2 = acc2 + i1 - i2;
+tel 

@@ -1,2 +1,29 @@
+/*
+kcg_lit_int8(1) + inC->i == kcg_lit_int8(2);
+Priority of `=` is lower than `+` and `and`. 
+
+*/
 function prec(i: int8) returns (o: bool) 
   o = 1 + i = 2 and true;
+
+/*
+ (inC->i1 & inC->i2) | inC->i3; 
+ Priority of "and" is higher than "or"
+*/
+function prec2(i1,i2,i3: bool) returns (o: bool) 
+  o = i1 and i2 or i3;
+
+
+/*
+inC->i1 + inC->i2 == inC->i3;
+Priority of "+" is higher than "=". 
+*/
+function prec3(i1,i2,i3: int8) returns (o: bool) 
+  o = i1 + i2 = i3;
+
+/*
+inC->i1 & (inC->i2 == inC->i3); 
+Priority of "=" is higher than "and". 
+*/
+function prec4(i1,i2,i3: bool) returns (o: bool) 
+  o = i1 and i2 = i3; 
