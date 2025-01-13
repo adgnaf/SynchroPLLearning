@@ -1,0 +1,21 @@
+/*
+
+N is expanded, N2 is not. 
+
+void rootOp(inC_rootOp *inC, outC_rootOp *outC)
+{
+  outC->o = inC->i + kcg_lit_int32(1) + (kcg_lit_int32(3) +
+      N2(kcg_lit_int32(1)));
+}
+*/
+function rootOp(i: int32) returns (o: int32) 
+  o = i + 1 + N(1);
+
+function 
+#pragma kcg expand #end 
+N(i: int32) returns (o: int32)
+  o = i + 2 + N2(i);
+
+function 
+N2(i: int32) returns (o: int32) 
+  o = i + 3;

@@ -1,0 +1,8 @@
+function 
+rootOp(i: int32) returns (o: int32) 
+  o = N(i);
+
+function 
+#pragma kcg noexpand #end 
+N(i: int32) returns (o: int32)
+  o = i;
