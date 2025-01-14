@@ -1,0 +1,10 @@
+-- const pragma 
+
+const 
+ -- #define N (kcg_lit_int32(10))
+ N: int32 = 10;
+ -- extern const kcg_int32 M; 
+ #pragma kcg const #end M: int32 = 42;
+
+function constPragma() returns (o: int32)
+ o = N + M;
