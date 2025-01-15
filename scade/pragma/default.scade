@@ -1,0 +1,20 @@
+/*
+case SSM_st_S1_A :
+  ...
+case SSM_st_S2_A :
+default :
+  ... 
+*/
+
+node defaultPragma(i1,i2: int32) returns (o1: int32)
+let 
+  automaton A 
+  initial state S1 
+    o1 = i1;
+  until if true resume S2;
+  #pragma kcg default #end -- set S2 as default 
+  state S2 
+    o1 = i2; 
+  until if true resume S1; 
+  returns o1; 
+tel 

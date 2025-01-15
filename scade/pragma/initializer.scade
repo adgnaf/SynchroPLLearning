@@ -1,0 +1,10 @@
+-- initializer pragma 
+type 
+  imported T1; -- extern void T1_init(T1 *kcg_c1);
+  imported #pragma kcg C:initializer Init_T2 #end T2; -- extern void Init_T2(T2 *kcg_c1);
+
+function initializerPragma(i1: T1; i2: T2) returns (o1: T1; i2: T2) 
+let
+  o1 = i1;
+  o2 = i2;
+tel 
