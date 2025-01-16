@@ -1,0 +1,4 @@
+function
+#pragma kcg no_separate_io #end 
+noSeparateIoPragma(i: int32) returns (o: int32)
+  o = i;

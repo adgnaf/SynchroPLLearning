@@ -1,0 +1,15 @@
+-- scalar pragma 
+type 
+  /* kcg_copy_T1 is missed. */
+  imported #pragma kcg C:scalar #end T1; 
+  /*
+    #define kcg_copy_T2(kcg_C1, kcg_C2)                                           \
+  (kcg_assign((kcg_C1), (kcg_C2), sizeof (T2)))
+  */
+  imported T2;
+
+function scalarPragma(i1: T1; i2: T2) returns (o1: T1; o2: T2)
+let 
+  o1 = i1;
+  o2 = i2;
+tel
