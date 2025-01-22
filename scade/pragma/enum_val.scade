@@ -1,0 +1,10 @@
+/*
+typedef enum kcg_tag_bgcolor { grey = 5, yellow = 7, green } bgcolor;
+*/
+type bgcolor = enum {
+    #pragma kcg C:enum_val 5 #end grey, 
+    #pragma kcg C:enum_val 7 #end yellow, green 
+};
+
+function rootOp(i: bgcolor) returns (o: bgcolor) 
+  o = i;

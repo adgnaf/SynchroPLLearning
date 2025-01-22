@@ -1,0 +1,3 @@
+const A: int32 = 42;
+function rootOp() returns (o: int32)
+  o = A;

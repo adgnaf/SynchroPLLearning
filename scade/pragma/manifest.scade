@@ -1,0 +1,23 @@
+-- manifest pragma 
+-- Use the manifested name to name the equivalent types in c 
+/*
+typedef struct kcg_tag_D { kcg_int32 f1; } D;
+typedef D C;
+typedef D B;
+typedef D A;
+*/
+
+type 
+  A = {f1: int32};
+  B = A;
+  C = {f1: int32;}
+  #pragma kcg manifest #end D = C;
+
+function manifestPragma(i1: A; i2: B; i3: C; i4: D) 
+  returns (o1: A; o2: B; o3: C; o4: D) 
+let 
+  o1 = i1;
+  o2 = i2;
+  o3 = i3;
+  o4 = i4;
+tel
