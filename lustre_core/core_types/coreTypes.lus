@@ -1,0 +1,31 @@
+/*
+Type ::= (bool | int | real | Lv6Id) { ^ Expression }
+Constant ::= true | false | IntConst | RealConst
+
+```c
+void Lustre_array_step(_integer i1,_integer i2,_integer i3,_integer out[3]){
+  out[0] = i1;
+  out[1] = i2;
+  out[2] = i3;
+
+} 
+
+void coreTypes_coreTypes_step(_boolean *o1,_integer *o2,_real *o3,_integer o4[3]){
+
+  *o1 = _true & _false;
+  *o2 = 42;
+  *o3 = 42.42;
+  Lustre_array_step(1,2,3,o4);
+
+} 
+```
+*/
+
+function coreTypes() 
+  returns (o1: bool; o2: int; o3: real; o4: int^3)
+let
+  o1 = true and false;
+  o2 = 42;
+  o3 = 42.42;
+  o4 = [1,2,3];
+tel

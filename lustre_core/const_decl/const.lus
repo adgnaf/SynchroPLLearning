@@ -1,0 +1,36 @@
+/*
+ConstDecl ::= const ConstDeclList
+ConstDeclList ::= OneConstDecl ; { OneConstDecl ; }
+OneConstDecl ::= Lv6Id (: Type | , Lv6Id {, Lv6Id } : Type | : Type = Expression | = Expression)
+
+```c
+extern _boolean const_b2;
+extern _integer const_x;
+extern _integer const_y;
+extern _integer const_z;
+void const_constOp_step(_integer *o,_boolean *o2,_real *o3){
+   _integer _X_1;
+
+  _X_1 = const_x + const_y;
+  *o = _X_1 + const_z;
+  *o2 = _true & const_b2;
+  *o3 = 3.14;
+
+} 
+```
+*/
+
+const 
+  x,y,z : int;
+  b = true;
+  b2 : bool;
+  pi:real = 3.14;
+
+function constOp() returns (o:int; o2:bool; o3: real)
+let
+  o = x + y + z;
+  o2 = b and b2;
+  o3 = pi;
+tel
+
+

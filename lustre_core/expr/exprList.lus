@@ -1,0 +1,20 @@
+/*
+Expression ::= (ExpressionList)
+ExpressionList ::= [Expression] {, Expression}
+
+```c
+void exprList_exprList_step(_integer i1,_integer i2,_integer *o1,_integer *o2){
+
+  *o2 = i2;
+  *o1 = i1;
+
+} 
+```
+*/
+
+function exprList(i1,i2: int) returns (o1, o2: int)
+let
+  o1, o2 = (i1, i2);
+tel
+
+
