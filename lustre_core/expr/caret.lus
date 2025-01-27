@@ -1,0 +1,18 @@
+/*
+Expression ::= Expression ^ Expression
+
+generated code
+```c
+void Lustre_hat_step(_boolean i1,_boolean out[3]){
+  out[0] = i1;
+  out[1] = i1;
+  out[2] = i1;
+
+} 
+```
+*/
+
+function caretExpr() returns (o: bool^3)
+let
+  o = true ^ 3;
+tel

@@ -1,0 +1,14 @@
+/*
+Expression ::= Expression div Expression
+
+generated code:
+```c
+*o1 = i1 / i2;
+```
+*/
+
+function divExpr(i1,i2: int) returns (o: int)
+let
+  o = i1 div i2;
+tel
+

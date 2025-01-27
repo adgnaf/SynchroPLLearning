@@ -1,0 +1,24 @@
+/*
+Expression ::= if Expression then Expression else Expression
+
+generated code
+```c
+  _X_2 = i1 - i2;
+  _X_1 = i1 + i2;
+   if (guard == _true) {
+     *o = _X_1;
+   } else {
+     *o = _X_2;
+   }
+```
+*/
+
+function ifExpr(guard: bool; i1,i2: int) returns (o: int)
+let
+  o = if guard
+      then 
+        i1 + i2
+      else
+        i1 - i2;
+tel
+

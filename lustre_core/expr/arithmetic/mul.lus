@@ -1,0 +1,14 @@
+/*
+Expression ::= Expression * Expression
+
+generated code 
+```c
+*o = i1 * i2;
+```
+*/
+
+function mulExpr(i1,i2: int) returns (o: int)
+let
+  o = i1 * i2;
+tel
+

@@ -1,0 +1,14 @@
+/*
+Expression ::= Expression mod Expression
+
+generated code 
+```c
+*o = i1 % i2;
+```
+*/
+
+function modExpr(i1,i2: int) returns (o: int)
+let
+  o = i1 mod i2;
+tel
+

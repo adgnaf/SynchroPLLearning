@@ -1,0 +1,19 @@
+/*
+equation ::= assert Expression;
+
+```c
+ _X_1 = i2 != 0;
+  *o = i1 / i2;
+
+#ifndef _DONT_CHECK_LUSTRE_ASSERTIONS
+  if (!_X_1) printf("#Warning: a Lustre assertion has been violated in assert.lus line:7, col:2 to 7\n");
+#endif
+```
+*/
+
+function assertExpr(i1,i2: int) returns (o: int)
+let
+  assert(i2<>0);
+  o = i1/i2;
+tel
+
