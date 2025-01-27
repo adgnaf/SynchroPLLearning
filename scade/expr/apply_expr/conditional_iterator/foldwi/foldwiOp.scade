@@ -2,9 +2,7 @@
 -- bool_guard, acc = op(idx, in_acc, elems) 
 
 function foldwiOp() returns (idx: int8; acc: int32)
-let
   idx, acc = (foldwi subOp <<10>> if true)(2);
-tel
 
 function 
 #pragma kcg expand #end 
@@ -14,3 +12,4 @@ let
   o_acc = in_acc + (1 : int32);
   bval = ival1 < 42;
 tel
+

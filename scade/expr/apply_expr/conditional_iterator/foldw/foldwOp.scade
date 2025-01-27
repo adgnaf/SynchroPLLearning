@@ -1,14 +1,12 @@
 -- (foldw operator <<expr>> if expr)(list)
 
 function foldwOp() returns (idx, acc: int32)
-let  
   idx, acc = (foldw subOp <<10>> if true)(1);
-tel
 
 function 
 #pragma kcg expand #end 
-subOp(i: int32) returns (bval: bool; o: int32)
+subOp(i: int32) returns (cond: bool; o: int32)
 let
-  bval = i < 42;
+  cond = i < 42;
   o = i;
 tel
