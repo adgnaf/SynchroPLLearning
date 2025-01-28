@@ -1,0 +1,19 @@
+/*
+None of the boolean variable in list is true.
+
+generated code
+```c
+void Lustre_nor_step(_boolean i1[3],_boolean *out){
+  int cpt,i;
+  cpt=0;
+  for (i = 0 ; i < 3 ; i += 1) if (i1[i] == _true) cpt++;
+  *out = (0 <= cpt && cpt <= 0) ? _true : _false;
+
+} 
+```
+*/
+function norExpr(a,b,c: bool) returns (o: bool)
+let
+  o = nor (a,b,c);
+tel
+

@@ -1,4 +1,16 @@
+/*
+
+Only bool is allowed for `and`
+
+generated code 
+```c
+*c = a & b;
+```
+*/
+
 function andExpr(a,b: bool) returns (c: bool) 
 let 
   c = a and b;
 tel 
+
+

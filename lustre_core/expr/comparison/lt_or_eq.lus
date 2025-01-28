@@ -1,0 +1,5 @@
+function lt_or_eq(a,b: int) returns (c: bool) 
+let 
+  c = a <= b;
+tel 
+

@@ -1,4 +1,10 @@
+/*
+```c
+ *c = a | b;
+```
+*/
 function orExpr(a,b: bool) returns (c: bool) 
 let
    c = a or b;
-tel;
+tel
+

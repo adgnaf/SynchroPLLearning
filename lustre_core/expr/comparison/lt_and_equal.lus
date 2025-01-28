@@ -1,4 +1,0 @@
-function lt_and_equal(a,b: int) returns (c: bool) 
-let 
-  c = a <= b;
-tel 

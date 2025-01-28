@@ -1,4 +1,10 @@
+/*
+```c
+*o = ! i;
+```
+*/
 function notExpr (i: bool) returns (o: bool)
 let 
     o = not i;
 tel 
+

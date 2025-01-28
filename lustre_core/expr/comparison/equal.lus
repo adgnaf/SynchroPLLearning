@@ -2,3 +2,4 @@ function equal(a,b: int) returns (c: bool)
 let 
   c = a = b;
 tel 
+
