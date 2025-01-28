@@ -1,0 +1,13 @@
+/*
+parametric node
+*/
+
+node mk_tab<<type t; const init: t; const size: int>>
+    (a:t) returns (res: t^size)
+let
+    res = init ^size;
+tel
+
+node tab_init3 = mk_tab<<int, 0, 3>>;
+node param_node = mk_tab<<bool, 4, true>>;
+

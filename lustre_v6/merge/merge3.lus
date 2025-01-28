@@ -1,0 +1,32 @@
+/*
+merge expression, enum clock
+
+Expression ::= merge Lv6Id MergeCaseList 
+				| Expression when ClockExpr 
+
+MergeCaseList ::= [MergeCase] {{MergeCase}}
+MergeCase ::= [[( (Lv6IdRef | true | false) -> Expression ) ]]
+
+ClockExpr ::= Lv6IdRef (Lv6Id) 
+
+```c
+  switch (clk){
+  case merge3_BLACK:
+  _X_2 = i2;
+  *o = _X_2;
+  break;
+  case merge3_WHITE:
+  _X_1 = i1;
+  *o = _X_1;
+  break;
+  }
+```
+*/
+
+type
+  Color = enum {WHITE, BLACK};
+function mergeExp(clk: Color; i1,i2: int) returns (o: int)
+let
+  o = merge clk (WHITE -> i1 when WHITE(clk)) (BLACK -> i2 when BLACK(clk));
+tel
+

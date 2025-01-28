@@ -1,0 +1,18 @@
+/*
+```c
+void struct2_useStruct_step(_integer i1,_integer i2,struct2_pair *o){
+
+  o->a = i1;
+  o->b = i2;
+
+}
+```
+*/
+type
+  pair = struct {a: int; b:int};
+
+function useStruct(i1,i2: int) returns (o: pair)
+let
+  o = pair {a = i1, b = i2};
+tel
+

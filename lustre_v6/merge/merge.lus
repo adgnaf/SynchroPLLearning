@@ -1,0 +1,24 @@
+/*
+ merge expression 
+
+Expression ::= merge Lv6Id MergeCaseList 
+MergeCaseList ::= [MergeCase] {{ MergeCase }}
+MergeCase ::= [[ (Lv6IdRef | true | false) -> Expression ]]
+
+```c
+  switch (clk){
+  case _true:
+  *o = i1;
+  break;
+  case _false:
+  *o = i2;
+  break;
+  }
+```
+*/
+
+node mergeExp(clk: bool; i1 : int when clk; i2: int when not clk) returns (o: int)
+let
+  o = merge clk (true -> i1) (false -> i2);
+tel
+

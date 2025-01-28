@@ -1,6 +1,10 @@
 # Scade6Learning
 
-Learning Scade6 synchronous programming language by Scade program examples.
+Learning Scade6 synchronous programming language and Lustre v6 by program examples.
+
+`scade` - Scade examples
+`lustre_core` - Lustre Core examples 
+`lustre_v6` - Lustre v6 specific examples 
 
 ## How to compile `.scade` 
 

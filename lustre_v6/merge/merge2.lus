@@ -1,0 +1,21 @@
+/*
+ merge expression, boolean clock
+
+ ```c
+ switch (clk){
+  case _true:
+  _X_2 = i2;
+  *o = _X_2;
+  break;
+  case _false:
+  _X_1 = i1;
+  *o = _X_1;
+  break;
+ }
+ ```
+*/
+function mergeExp(clk: bool; i1,i2: int) returns (o: int)
+let
+  o = merge clk (false -> i1 when not clk) (true -> i2 when clk);
+tel
+

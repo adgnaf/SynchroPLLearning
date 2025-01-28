@@ -1,0 +1,21 @@
+/*
+struct definition
+
+Expression ::= Expression . Lv6Id
+
+```c
+void struct_useStruct_step(struct_complex i,_real *o){
+
+  *o = i.im;
+
+}
+```
+*/
+type
+  complex = {re: real; im: real};
+
+function useStruct(i: complex) returns (o: real)
+let
+  o = i.im;
+tel
+

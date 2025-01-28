@@ -1,0 +1,24 @@
+/*
+enum type 
+
+TypeDecl ::= type TypeDeclList 
+TypeDeclList ::= OneTypeDecl; {{ OneTypeDecl; }}
+OneTypeDecl ::= Lv6Id = enum {Lv6Id {{, Lv6Id}}}
+
+generated code
+```c
+#define enum_WHITE 0
+...
+*o = 0;
+```
+*/
+
+type 
+  Color = enum {WHITE, BLACK};
+
+function enumType() returns (o: Color)
+let
+  o = WHITE;
+tel
+
+
