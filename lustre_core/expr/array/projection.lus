@@ -1,0 +1,14 @@
+/*
+Expression ::= Expression [Expression]
+
+The `Expression` in `[]` must be constant.
+
+```c
+*o1 = arr[1];
+```
+*/
+function projectionExpr(arr: int^3) returns (o1:  int)
+let
+  o1 = arr[1];
+tel
+

@@ -1,0 +1,22 @@
+/*
+`current`: return last value when not clock.
+
+Expression ::= current Expression
+
+```c
+void Lustre_current_step(_boolean i1,_integer i2,_integer *out,Lustre_current_ctx_type* ctx){
+   switch (i1){
+   case _true:
+   ctx->_memory = i2;
+   break;
+ }
+```
+*/
+node currentExpr(i: int) returns (o: int) 
+var 
+  ck: bool;
+let 
+  o = current(i when ck); -- get last value when not ck
+  ck = true -> not pre ck;
+tel 
+

@@ -1,0 +1,20 @@
+/*
+slice of an array.
+
+Expression ::= Expression [select]
+Select ::= Expression .. Expression
+
+```c
+void Lustre_array_slice_step(_integer i1[4],_integer out[3]){
+  out[0] = i1[0];
+  out[1] = i1[1];
+  out[2] = i1[2];
+
+}
+```
+*/
+function sliceExpr(in_arr: int^4) returns (o_arr: int^3)
+let
+  o_arr = in_arr[0..2];
+tel
+

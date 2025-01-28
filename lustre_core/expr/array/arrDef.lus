@@ -1,0 +1,17 @@
+/*
+Expression ::= [ExpressionList]
+
+```c
+void Lustre_array_step(_integer i1,_integer i2,_integer i3,_integer out[3]){
+  out[0] = i1;
+  out[1] = i2;
+  out[2] = i3;
+} 
+```
+*/
+
+function arrDefExpr() returns (o: int^3)
+let
+  o = [1,2,3];
+tel
+

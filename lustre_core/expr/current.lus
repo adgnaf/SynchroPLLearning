@@ -1,7 +1,0 @@
-node currentExpr(i: int) returns (o: int) 
-var 
-  ck: bool;
-let 
-  o = current(i when ck); -- get last value when not ck
-  ck = true -> not pre ck;
-tel 
