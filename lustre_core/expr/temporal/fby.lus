@@ -1,0 +1,10 @@
+/*
+Expression ::= Expression fby Expression
+
+combination of `->` and `pre`.
+*/
+node fbyExpr(i: int) returns (o: int) 
+let 
+  o = 0 fby i;
+tel 
+

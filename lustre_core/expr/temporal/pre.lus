@@ -1,0 +1,8 @@
+/*
+`pre` - previous. Allow one to refer at cycle `n` to the value of a flow at cycle `n-1`.
+*/
+node preExpr(i1,i2: int) returns (o: int) 
+let
+  o = i1 -> pre i2;
+tel 
+

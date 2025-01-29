@@ -1,0 +1,9 @@
+/*
+`->` reads `followed by`.
+`a -> b` equal to a at the first instant, and then forever equal to b.
+*/
+
+node followedBy(i1,i2: int) returns (o: int)
+let 
+  o = i1 -> i2;
+tel 
