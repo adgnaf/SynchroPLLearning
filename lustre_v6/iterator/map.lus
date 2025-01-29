@@ -1,0 +1,9 @@
+/*
+map
+arrays to arrays, without accumulator
+*/
+function mapOp() returns (o: int^3)
+let
+  o = map<<+; 3>>([1,2,3], [3,2,1]);
+tel
+

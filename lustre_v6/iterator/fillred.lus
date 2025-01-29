@@ -1,0 +1,15 @@
+/*
+arrays to arrays
+*/
+function fillredOp(X: bool^8; Y: bool^8) returns (acc: bool; Z: bool ^8)
+let
+  acc, Z = fillred<<fulladd; 8>>(false, X, Y);
+tel
+
+function fulladd(acc, x, y: bool) returns (o_acc, z: bool)
+let
+  z = acc xor x xor y;
+  o_acc = if acc then x or y else  x and y;
+tel
+
+

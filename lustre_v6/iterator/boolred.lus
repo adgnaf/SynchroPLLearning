@@ -1,0 +1,6 @@
+function boolredOp() returns (o1, o2: bool)
+let
+  o1 = boolred<<0;1;3>>([true, true, false]); -- false
+  o2 = boolred<<0;0;3>>([false, false, false]);  -- true
+tel
+

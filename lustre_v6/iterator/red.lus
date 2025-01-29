@@ -1,0 +1,8 @@
+/*
+red - array to scalar
+*/
+function redOp() returns (o: int)
+let
+  o = red<<+; 3>>(0, [1,2,3]);
+tel
+

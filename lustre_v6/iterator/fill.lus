@@ -1,0 +1,15 @@
+/*
+scalar to arrays.
+*/
+function fillOp() returns (acc: int; arr: int^8)
+let
+  acc, arr = fill<<incr, 8>>(0);
+tel
+
+
+function incr(in_acc: int) returns (o_acc: int; o2: int)
+let
+  o_acc = in_acc + 1;
+  o2 = o_acc;
+tel 
+
