@@ -2,7 +2,8 @@
 
 Learning Scade6 synchronous programming language and Lustre v6 by program examples.
 
-* `scade` - Scade examples
+* `scade` - Scade 6 examples
+* `heptagon` - Heptagon examples
 * `lustre_core` - Lustre Core examples 
 * `lustre_v6` - Lustre v6 specific examples 
 
