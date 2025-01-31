@@ -1,0 +1,9 @@
+-- _out->o = i.f1;
+type 
+  t = {f1:int; f2:bool}
+
+  fun fieldAccess(i: t) returns (o: int)
+  let
+    o = i.f1;
+  tel
+

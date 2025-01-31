@@ -1,0 +1,8 @@
+--  _out->o[0] = 1;
+--  _out->o[1] = 2;
+--  _out->o[2] = 3;
+fun arrDef() returns (o: int^3)
+let
+  o = [1,2,3];
+tel
+

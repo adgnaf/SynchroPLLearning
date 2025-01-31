@@ -1,0 +1,8 @@
+-- different
+-- v = (i1==i2);
+-- _out->o = !(v);;
+fun different(i1,i2: int) returns (o: bool)
+let
+  o = i1 <> i2;
+tel
+

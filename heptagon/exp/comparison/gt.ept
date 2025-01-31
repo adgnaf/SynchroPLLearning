@@ -1,0 +1,7 @@
+-- greater than
+-- _out->o = (i1>i2);
+fun gt(i1,i2: int) returns (o: bool)
+let
+  o = i1 > i2;
+tel
+

@@ -1,0 +1,12 @@
+--    for (i = 0; i < 2; ++i) {
+--      _out->o[i] = in_arr1[i];
+--    }
+--    for (i_1 = 0; i_1 < 3; ++i_1) {
+--      _out->o[(2+i_1)] = in_arr2[i_1];
+--    }
+fun concat(in_arr1: int^2; in_arr2: int^3) 
+  returns (o: int^5)
+let
+  o = in_arr1 @ in_arr2;
+tel
+

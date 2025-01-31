@@ -1,0 +1,8 @@
+--    for (i = 0; i < 3; ++i) {
+--      _out->o_arr[i] = in_arr[(i+2)];
+--    }
+fun slice(in_arr: int^5) returns (o_arr: int^3)
+let
+  o_arr = in_arr[2..4];
+tel
+

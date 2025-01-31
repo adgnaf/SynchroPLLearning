@@ -1,0 +1,11 @@
+--  _out->o.f2 = true;
+--  _out->o.f1 = 1;
+
+type
+  t = {f1:int; f2:bool}
+fun recordDef() returns (o: t)
+let
+  o = {f1 = 1; f2 = true};
+tel
+
+

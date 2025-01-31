@@ -1,0 +1,7 @@
+(* and *)
+(*  _out->o = (i1&&i2); *)
+fun andFun(i1,i2: bool) returns (o: bool)
+let
+  o = i1 and i2;
+tel
+

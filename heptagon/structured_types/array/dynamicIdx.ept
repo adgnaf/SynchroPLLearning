@@ -1,0 +1,10 @@
+--  if (((idx<3)&&(0<=idx))) {
+--    _out->o = in_arr[idx];
+--  } else {
+--    _out->o = 42;
+--  };
+fun dynamicIdx(in_arr: int ^3; idx: int) returns (o: int)
+let
+  o = in_arr . [idx] default 42;
+tel
+

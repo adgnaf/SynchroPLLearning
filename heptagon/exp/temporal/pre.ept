@@ -1,0 +1,13 @@
+-- pre 
+--  if (self->v) {
+--    _out->o = 0;
+--  } else {
+--    _out->o = self->v_1;
+--  };
+--  self->v_1 = i1;
+--  self->v = false;
+node preNode(i1: int) returns (o: int)
+let
+  o = 0 -> pre i1;
+tel
+

@@ -1,0 +1,7 @@
+-- equal
+--  _out->o = (i1==i2);
+fun equal(i1,i2: int) returns (o: bool)
+let
+  o = i1 = i2;
+tel
+

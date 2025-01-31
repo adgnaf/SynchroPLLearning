@@ -1,0 +1,7 @@
+(* or *)
+(* _out->o = (i1||i2); *)
+fun orFun(i1,i2: bool) returns (o: bool)
+let
+  o = i1 or i2;
+tel
+

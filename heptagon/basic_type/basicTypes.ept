@@ -1,0 +1,11 @@
+--  _out->o3 = i3;
+--  _out->o2 = i2;
+--  _out->o1 = i1;
+
+fun basicTypes(i1: bool; i2: int; i3: float) returns (o1: bool; o2: int; o3: float) 
+let
+  o1 = i1;
+  o2 = i2;
+  o3 = i3;
+tel
+

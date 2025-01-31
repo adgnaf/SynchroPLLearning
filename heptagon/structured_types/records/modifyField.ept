@@ -1,0 +1,11 @@
+--  _out->o = i;
+--  _out->o.f1 = 42;
+
+type 
+  t = {f1: int; f2: bool}
+
+fun modifyField(i: t) returns (o: t)
+let
+  o = { i with .f1 = 42 };
+tel
+

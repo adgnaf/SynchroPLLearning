@@ -1,0 +1,7 @@
+(* mod *)
+(* _out->o = (i1%42); *)
+fun modFun(i1,i2: int) returns (o: int)
+let
+  o = i1 % i2;
+tel
+

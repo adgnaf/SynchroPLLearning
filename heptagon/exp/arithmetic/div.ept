@@ -1,0 +1,7 @@
+(* division *)
+(*  _out->o = (i1/i2);  *)
+fun div(i1,i2: int) returns (o: int)
+let
+  o = i1 / i2;
+tel
+

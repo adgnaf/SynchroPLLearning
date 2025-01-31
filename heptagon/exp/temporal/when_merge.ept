@@ -1,0 +1,12 @@
+-- merge when 
+--  if (ck) {
+--    _out->o = i1;
+--  } else {
+--    _out->o = i2;
+--  };
+
+node whenMerge(ck: bool; i1,i2: int) returns (o: int)
+let
+  o = merge ck (true -> i1 when ck) (false -> i2 whenot ck);
+tel
+

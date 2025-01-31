@@ -1,0 +1,7 @@
+(* not *)
+(* _out->o = !(i1); *)
+fun notFun(i1: bool) returns (o: bool)
+let
+  o = not i1 ;
+tel
+

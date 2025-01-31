@@ -1,0 +1,6 @@
+--  _out->o = in_arr[1];
+fun constantIdx(in_arr: int ^3) returns (o: int)
+let
+  o = in_arr[1];
+tel
+

@@ -1,0 +1,13 @@
+-- fby
+--  if (self->v) {
+--    _out->o = i1;
+--  } else {
+--    _out->o = self->v_1;
+--  };
+--  self->v_1 = i2;
+--  self->v = false;
+node fbyNode(i1,i2: int) returns (o: int)
+let
+  o = i1 fby i2;
+tel
+

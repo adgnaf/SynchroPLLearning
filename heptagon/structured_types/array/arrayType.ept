@@ -1,0 +1,8 @@
+--    for (_1 = 0; _1 < 3; ++_1) {
+--      _out->o[_1] = 42;
+--    }
+fun arrayType() returns (o: int^3)
+let
+  o = 42 ^ 3;
+tel
+

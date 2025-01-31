@@ -1,0 +1,7 @@
+-- _out->o = in_arr[between(idx, 3)];
+fun trunc(in_arr: int ^3; idx: int) returns (o: int) 
+let
+  o = in_arr[>idx<];
+tel
+
+

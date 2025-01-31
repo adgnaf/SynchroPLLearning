@@ -1,0 +1,7 @@
+(* unary minus *)
+(* _out->o = -(i1); *)
+fun unary_minus(i1: int) returns (o: int)
+let
+  o = -i1 ;
+tel
+

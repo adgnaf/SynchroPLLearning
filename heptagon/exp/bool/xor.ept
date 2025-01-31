@@ -1,0 +1,7 @@
+(* xor *)
+(* _out->o = xor(i1, i2); *)
+fun xorFun(i1,i2: bool) returns (o: bool)
+let
+  o = i1 xor i2;
+tel
+

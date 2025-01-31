@@ -1,0 +1,8 @@
+-- if (((idx<3)&&(0<=idx))) {
+--    _out->o_arr[idx] = new_val;
+--  };
+fun modifyElem(in_arr: int^3; idx, new_val: int) returns (o_arr: int^3)
+let
+  o_arr = [ in_arr with [idx] = new_val ];
+tel
+
