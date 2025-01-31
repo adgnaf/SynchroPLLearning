@@ -1,0 +1,14 @@
+fun addFun(i1,i2,acc: int) 
+  returns (o, o_acc: int)
+let 
+  o_acc = i1 + i2 + acc;
+  o = i1 + i2;
+tel 
+
+fun mapfoldFun(i1,i2: int^3) 
+  returns (o: int^3; acc: int)
+let
+  (o, acc) = mapfold<<3>> addFun(i1, i2, 0);
+tel 
+
+

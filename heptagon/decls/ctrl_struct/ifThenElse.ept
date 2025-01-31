@@ -1,0 +1,25 @@
+-- ck = (v>=0);
+-- if (ck) {
+--   x_true = (self->x_1+v);
+--   x = x_true;
+-- } else {
+--   x_false = (self->x_1-v);
+--   x = x_false;
+-- };
+-- _out->o = x;
+-- self->x_1 = x;;
+
+type modes = Up | Down 
+
+node ifThenElse(v: int) returns (o: int) 
+var 
+  last x: int = 0;
+let
+  o = x;
+  if v >= 0
+  then 
+    x = last x + v 
+  else 
+    x = last x - v 
+  end 
+tel 

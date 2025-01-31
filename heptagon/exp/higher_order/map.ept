@@ -1,0 +1,9 @@
+fun addFun(i1,i2: int) returns (o: int) 
+let 
+  o = i1 + i2;
+tel 
+
+fun mapFun(i1,i2: int ^3) returns (o: int ^3)
+let 
+  o = map<<3>> addFun(i1, i2);
+tel

@@ -1,0 +1,28 @@
+  -- switch (ck) {
+  --   case SwitchStruct__Up:
+  --     x_Up = (self->x_1+v);
+  --     x = x_Up;
+  --     break;
+  --   case SwitchStruct__Down:
+  --     x_Down = (self->x_1-v);
+  --     x = x_Down;
+  --     break;
+  --   default:
+  --     break;
+  -- };
+  -- _out->o = x;
+  -- self->x_1 = x;;
+
+type modes = Up | Down 
+
+node switchStruct(m: modes; v: int) returns (o: int)
+var
+  last x: int = 0;
+let
+  o = x;
+  switch m
+  | Up do x = last x + v 
+  | Down do x = last x - v
+  end 
+tel
+

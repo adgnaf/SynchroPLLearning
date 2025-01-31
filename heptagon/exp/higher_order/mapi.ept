@@ -1,0 +1,11 @@
+fun andFun(i1,i2: bool; idx: int) 
+  returns (o: bool) 
+let 
+  o = i1 and i2;
+tel 
+
+fun mapiFun(i1,i2: bool ^3) 
+  returns (o: bool ^3)
+let 
+  o = mapi<<3>> andFun(i1, i2);
+tel

@@ -1,0 +1,9 @@
+fun addFun(i1,i2,acc, idx: int) returns (o: int) 
+let 
+  o = acc + i1 + i2;
+tel 
+
+fun foldiFun(i1,i2: int ^3) returns (o: int)
+let 
+  o = foldi<<3>> addFun(i1, i2, 0);
+tel
