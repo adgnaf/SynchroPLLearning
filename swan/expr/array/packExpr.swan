@@ -1,0 +1,7 @@
+-- array - pack
+function packExpr (i1: int32^6)
+returns (o1: int32^2^3)
+{
+  let o1 = pack<<2, 3>>(i1);
+}
+

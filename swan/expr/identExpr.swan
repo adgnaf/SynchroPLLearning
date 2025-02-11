@@ -1,0 +1,8 @@
+function identExpr (i1: int32)
+returns (o1: int32)
+{
+  let 
+  o1 = i1;
+}
+
+

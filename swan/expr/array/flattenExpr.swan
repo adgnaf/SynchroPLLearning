@@ -1,0 +1,7 @@
+-- array - flatten
+function flattenExpr (i1: int32^3^2)
+returns (o1: int32^6)
+{
+  let o1 = flatten(i1);
+}
+

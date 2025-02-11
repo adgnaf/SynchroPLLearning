@@ -1,0 +1,7 @@
+-- logical and
+function andExpr (i1: bool; i2: bool)
+returns (o1: bool)
+{
+  let o1 = i1 and i2;
+}
+

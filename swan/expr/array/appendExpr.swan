@@ -1,0 +1,7 @@
+-- array - concatenation
+function appendExpr (i1: int32^2; i2: int32^3)
+returns (o1: int32^5)
+{
+  let o1 = i1 @ i2;
+}
+

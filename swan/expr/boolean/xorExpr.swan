@@ -1,0 +1,7 @@
+-- logical xor 
+function xorExpr (i1: bool; i2: bool)
+returns (o1: bool)
+{
+  let o1 = i1 xor i2;
+}
+

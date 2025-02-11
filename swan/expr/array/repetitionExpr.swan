@@ -1,0 +1,7 @@
+-- array - repetition
+function repetitionExpr (i1: int32)
+returns (o1: int32^3)
+{
+  let o1 = i1 ^3;
+}
+

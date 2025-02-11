@@ -1,0 +1,7 @@
+-- array - projection with default 
+function projWithDefaultExpr (i1: int32^3; idx: int32)
+returns (o1: int32)
+{
+  let o1 = (i1.[idx] default 0);
+}
+

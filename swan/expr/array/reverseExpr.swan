@@ -1,0 +1,7 @@
+-- array - reverse 
+function reverseExpr (i1: int32^3)
+returns (o1: int32^3)
+{
+  let o1 = reverse(i1);
+}
+

@@ -1,0 +1,7 @@
+-- array - transpose 
+function transposeExpr (i1: int32^2^3^4^5)
+returns (o1: int32^2^5^4^3)
+{
+  let o1 = transpose{1,3}(i1);
+}
+

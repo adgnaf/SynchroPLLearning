@@ -1,0 +1,7 @@
+-- bitwise not 
+function lnotExpr (i1: uint32)
+returns (o1: uint32)
+{
+  let o1 = lnot i1;
+}
+

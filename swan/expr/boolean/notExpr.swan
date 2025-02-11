@@ -1,0 +1,7 @@
+-- logical not 
+function notExpr (i1: bool)
+returns (o1: bool)
+{
+  let o1 = not i1;
+}
+

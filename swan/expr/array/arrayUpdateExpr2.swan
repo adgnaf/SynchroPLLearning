@@ -1,0 +1,7 @@
+-- array - array update 
+function arrayUpdateExpr2 (i1: int32^5)
+returns (o1: int32^5)
+{
+  let o1 = (i1 with [1] = 42; [2] = 43);
+}
+

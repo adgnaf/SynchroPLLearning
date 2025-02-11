@@ -1,0 +1,7 @@
+-- logical shift right
+function lsrExpr (i1: uint32; i2: uint32)
+returns (o1: uint32)
+{
+  let o1 = i1 lsr i2;
+}
+

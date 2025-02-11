@@ -1,0 +1,6 @@
+type T = {f1: int32, f2: bool};
+
+function structConstructor() returns (o1: T) 
+{
+    let o1 = {f1: 1, f2: true} : T;
+}

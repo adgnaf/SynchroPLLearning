@@ -1,0 +1,6 @@
+function numericCastExpr (i0: uint8)
+returns (o0: uint32)
+{
+  let o0 = (i0 :> uint32);
+}
+

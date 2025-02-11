@@ -1,0 +1,7 @@
+-- arithmetic addition 
+function addExpr (i1: int32; i2: int32)
+returns (o1: int32)
+{
+  let o1 = i1 + i2;
+}
+

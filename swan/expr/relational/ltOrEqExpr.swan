@@ -1,0 +1,7 @@
+-- relational - less than or equal 
+function ltOrEqExpr (i1: int32; i2: int32)
+returns (o1: bool)
+{
+  let o1 = i1 <= i2;
+}
+

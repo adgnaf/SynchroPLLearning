@@ -1,0 +1,7 @@
+-- array - array constructor 
+function arrayConstructorExpr ()
+returns (o1: int32^3)
+{
+  let o1 = [1,3,5];
+}
+
