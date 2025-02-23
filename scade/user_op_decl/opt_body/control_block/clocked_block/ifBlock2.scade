@@ -1,0 +1,22 @@
+-- if_block ::= if expr then (( data_def | if_block ))
+--  else (( data_def | if_block ))
+
+function ifBlock2(cond: bool; i1, i2: int8)
+  returns (o: int8)
+let
+  activate if_blk 
+    if i1 = 1
+    then 
+      if cond
+      then 
+        o = i2;
+      else 
+        o = i2;
+    else 
+      if i1 = 2
+      then
+        o = i2;
+      else 
+        o = i2;
+  returns ..;
+tel
