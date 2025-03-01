@@ -1,0 +1,16 @@
+-- Post-namespace Warning (WAR_502): Unreachable state 
+-- The state S2 cna never be reached.
+
+node smTest() returns () 
+automaton SM 
+  initial state S1 
+  let
+  tel
+  -- Even the transition will never be fired,
+  -- warning unreachable state will not be exist.
+  until if false restart S2;
+
+  state S2
+  let
+  tel
+returns ..;

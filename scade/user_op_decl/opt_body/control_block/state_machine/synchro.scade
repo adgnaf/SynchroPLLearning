@@ -1,0 +1,20 @@
+-- synchro transition, resume target state 
+
+node smTest(i1, i2, i3: int8)
+  returns (o: int8)
+automaton SM
+  initial state State1
+    automaton InnerSM
+      initial state InnerState1
+        unless
+          if i2 > 42 restart InnerState2;
+        o = i1;
+
+      final state InnerState2
+        o = i2;
+    returns ..;
+    until synchro resume State4;
+
+  state State4
+    o = i3;
+returns ..;

@@ -1,0 +1,39 @@
+-- synchro 
+-- Post-namespace Warning (WAR_503): Impossible synchro 
+-- The synchro transition in state S1 cannot be fired. 
+-- Automaton SM3 does not have any final state.
+
+node smTest() returns () 
+automaton SM
+initial state S1 
+let
+  automaton SM2
+  initial state S3
+  let
+  tel 
+  until if true restart S4;
+
+  final state S4 
+  let 
+  tel 
+  returns ..;
+
+  -- SM3 has no final state.
+  automaton SM3
+  initial state S5
+  let
+  tel
+  until if true restart S6
+
+  state S6
+  let
+  tel
+  returns ..;
+tel 
+until synchro restart S2;
+
+state S2
+let
+tel
+
+returns ..;

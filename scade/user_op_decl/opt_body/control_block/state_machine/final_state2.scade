@@ -1,0 +1,14 @@
+-- final state 
+-- Automaton has a final state. But the automaton is not in the scope of any synchro transition.
+
+node smTest() returns ()
+  automaton SM
+  initial state S1
+  let
+  tel
+  until if true restart S2;
+
+  final state S2
+  let
+  tel
+  returns ..;

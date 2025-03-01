@@ -1,0 +1,14 @@
+-- unless transition 
+
+node smTest(i1, i2: int8) returns (o: int8)
+let
+  automaton SM
+    initial state State1
+      unless
+        if true resume State2;
+      o = i1;
+
+    state State2
+      o = i2;
+  returns ..;
+tel

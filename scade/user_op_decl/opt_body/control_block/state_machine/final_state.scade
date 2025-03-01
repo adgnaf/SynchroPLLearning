@@ -1,0 +1,11 @@
+-- Post-namespace Warning (WAR_506): Useless final declaration
+
+node smTest() returns ()
+  automaton SM 
+  initial final state S1
+  -- Any state can be tagged with the label final, even the initial one 
+  initial final state S1
+  let
+  tel
+  returns ..;
+

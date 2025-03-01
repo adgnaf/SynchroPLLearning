@@ -1,0 +1,15 @@
+-- unless transition, restart target state 
+
+node smTest(i1, i2: int8) 
+returns (o: int8)
+let
+  automaton SM
+    initial state State1
+      unless
+        if true restart State2;
+      o = i2;
+
+    state State2
+      o = i1;
+  returns ..;
+tel

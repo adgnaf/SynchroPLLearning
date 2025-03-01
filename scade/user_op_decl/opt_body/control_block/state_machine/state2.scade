@@ -1,0 +1,13 @@
+-- Post-namespace Warning (WAR_502): Unreachable state 
+-- The state S2 cna never be reached.
+
+node smTest() returns () 
+automaton SM 
+  initial state S1 
+  let
+  tel
+
+  state S2
+  let
+  tel
+returns ..;

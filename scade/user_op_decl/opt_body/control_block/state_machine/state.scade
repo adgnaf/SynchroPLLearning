@@ -1,0 +1,7 @@
+node smTest() returns ()
+  automaton SM
+  initial state S
+  let
+  tel
+  returns ..;
+
