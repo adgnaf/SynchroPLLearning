@@ -1,0 +1,9 @@
+function caseExpr (i1: bool)
+returns (o: int32)
+{
+  let o = (case i1 of 
+  | true : 
+  24
+  | false :
+  42); 
+}

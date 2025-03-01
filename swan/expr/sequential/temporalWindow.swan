@@ -1,0 +1,7 @@
+-- window<<n>> (expr)(expr)
+
+node temporalWindow (i0: int32)
+returns (o: int32^3)
+{
+let o = window<<3>> (0^3) (i0);
+}

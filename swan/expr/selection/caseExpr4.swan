@@ -1,0 +1,5 @@
+function caseExpr4 (i: char)
+returns (o: int32)
+{
+let o = (case i of | 'a' : 24 | default : 42);
+}

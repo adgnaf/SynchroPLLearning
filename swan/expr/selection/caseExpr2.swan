@@ -1,0 +1,11 @@
+type E1 = enum {LEFT, RIGHT};
+
+function caseExpr2 (i: E1)
+returns (o: int32)
+{
+let o = (case i of 
+ | LEFT:
+ 24
+ | RIGHT:
+ 42);
+}

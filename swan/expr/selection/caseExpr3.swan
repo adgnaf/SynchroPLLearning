@@ -1,0 +1,9 @@
+function caseExpr3 (i: int32)
+returns (o: int32)
+{
+let o = (case i of 
+    | 1 : i+1 
+    | 2 : i+2 
+    | 3 : i+3 
+    | default : i);
+}

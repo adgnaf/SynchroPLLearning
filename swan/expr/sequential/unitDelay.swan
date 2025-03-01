@@ -1,0 +1,7 @@
+-- pre expr 
+
+node unitDelay (i0: int32)
+returns (o: int32)
+{
+let o = pre i0;
+}

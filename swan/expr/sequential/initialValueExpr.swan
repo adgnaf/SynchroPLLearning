@@ -1,0 +1,7 @@
+-- expr -> expr 
+
+node initialValueExpr (i0: int32; i1: int32)
+returns (o: int32)
+{
+let o = i0 -> i1;
+}

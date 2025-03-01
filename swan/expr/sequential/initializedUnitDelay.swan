@@ -1,0 +1,7 @@
+-- initialized unit delay 
+
+node initializedUnitDelay (i0: int32)
+returns (o: int32)
+{
+let o = 42 pre i0;
+}

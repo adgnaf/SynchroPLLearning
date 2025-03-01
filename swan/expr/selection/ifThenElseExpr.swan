@@ -1,0 +1,7 @@
+-- if expr then expr else expr 
+
+function ifThenElseExpr (i: bool)
+returns (o: int32)
+{
+let o = if i then 24 else 42;
+}
