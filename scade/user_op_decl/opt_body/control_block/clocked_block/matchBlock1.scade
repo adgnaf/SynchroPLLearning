@@ -1,13 +1,10 @@
-function whenBlock1(ival1: int8; bval: bool) returns (ival2: int8)
-let
-  activate MyWhenBlock when bval match
+-- clocked_block ::= activate [[id]] match_block 
+-- match_block ::= when expr match {{| pattern : data_def }}+ 
+
+function whenBlock1(i1: int8; bval: bool) returns (o: int8)
+  activate mb when bval match
       | true :
-      let
-        ival2= ival1;
-      tel
+        o = i1;
       | false :
-      let
-        ival2= ival1;
-      tel
+        o = i1;
   returns ..;
-tel

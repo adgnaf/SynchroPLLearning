@@ -1,0 +1,14 @@
+-- clocked_block ::= activate [[id]] match_block 
+-- match_block ::= when expr match {{| pattern : data_def }}+
+
+type
+E1 = enum {LEFT, RIGHT};
+
+function whenBlock(i1: int8; direction: E1) returns (o: int8)
+  activate mb 
+  when direction match 
+  | LEFT :
+  o = i + 1;
+  | RIGHT :
+  o = i - 1;
+  returns ..;
