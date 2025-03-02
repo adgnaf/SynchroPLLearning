@@ -1,0 +1,10 @@
+function activateWhen2 (i: E1)
+returns (o: int32)
+{
+    let o : 
+    activate when i match 
+    | LEFT :
+    o = 1;
+    | RIGHT :
+    o = 2;;
+}

@@ -1,0 +1,11 @@
+function activateIf3 (i: int32)
+returns (o: int32)
+{
+let o : activate if i = 1 then 
+          activate if i = 2 then 
+            o = 1;
+          else 
+            o = 2;;
+        else 
+          o = 3;;  
+}

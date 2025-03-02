@@ -1,0 +1,10 @@
+function activateIf (i1: int32; i2: int32)
+returns (o: int32)
+{
+let o : activate if i1 = 1 then 
+            o = i2 + 2;
+        else if i1 = 2 then 
+            o = i2 * 2;
+        else 
+            o = i2 mod 2;;
+}

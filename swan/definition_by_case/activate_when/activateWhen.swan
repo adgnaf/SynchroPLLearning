@@ -1,0 +1,10 @@
+function activateWhen (i: bool)
+returns (o: int32)
+{
+let o : 
+    activate when i match 
+    | true :
+    o = 1;
+    | false :
+    o = 2;;
+}
