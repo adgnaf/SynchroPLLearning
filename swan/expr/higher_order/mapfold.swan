@@ -1,0 +1,13 @@
+function add4mapfold (in_acc: int32; i1: int32; i2: int32)
+returns (o_acc: int32; o: int32)
+{
+let 
+    o_acc = in_acc + 1;
+    o = i1 + i2;
+}
+
+function mapfoldTest (in_acc: int32; arr1: int32^3; arr2: int32^3)
+returns (o_arr: int32^3; o_acc: int32)
+{
+let o_acc, o_arr = (mapfold add4mapfold) <<3>> (in_acc, arr1, arr2);
+}

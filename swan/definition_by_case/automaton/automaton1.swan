@@ -1,0 +1,7 @@
+node automaton1 ()
+returns ()
+{
+let () : automaton
+    initial state S1:
+    ;
+}

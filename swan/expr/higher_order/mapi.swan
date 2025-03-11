@@ -1,0 +1,11 @@
+function add4mapi (idx: int32; i1: int32; i2: int32)
+returns (o: int32)
+{
+let o = if idx > 3 then 42 else i1 + i2;
+}
+
+function mapiTest (arr1: int32^3; arr2: int32^3)
+returns (o_arr: int32^3)
+{
+let o_arr = (mapi add4mapi) <<3>> (arr1, arr2);
+}

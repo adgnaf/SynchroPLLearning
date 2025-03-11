@@ -1,0 +1,14 @@
+-- map 
+
+function add (i1: int32; i2: int32)
+returns (o: int32)
+{
+  let o = i1 + i2;
+}
+
+function mapTest (i1: int32^3; i2: int32^3)
+returns (o: int32^3)
+{
+  let o = (map add) <<3>> (i1,i2); 
+}
+

@@ -1,7 +1,9 @@
+type E1 = enum {LEFT, RIGHT};
+
 function activateWhen2 (i: E1)
 returns (o: int32)
 {
-    let o : 
+let o : 
     activate when i match 
     | LEFT :
     o = 1;

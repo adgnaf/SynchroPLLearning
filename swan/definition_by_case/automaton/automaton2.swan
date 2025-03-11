@@ -1,0 +1,8 @@
+node automaton1 ()
+returns (o : int32)
+{
+let o : automaton 
+    initial state S1:
+    let o = 1;
+    ;
+}

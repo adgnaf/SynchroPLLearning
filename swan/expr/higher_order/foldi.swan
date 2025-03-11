@@ -1,0 +1,11 @@
+function add4foldi (idx: int32; in_acc: int32; i2: int32)
+returns (o: int32)
+{
+let o = if idx > 1 then in_acc else in_acc + i2;
+}
+
+function foldiTest (in_acc: int32; in_arr: int32^3)
+returns (o: int32)
+{
+let o = (foldi add4foldi) <<3>> (in_acc, in_arr);
+}

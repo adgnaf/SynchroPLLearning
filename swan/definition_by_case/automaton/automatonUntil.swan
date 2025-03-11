@@ -1,0 +1,13 @@
+node automatonUntil ()
+returns (o: int32)
+{
+let o : automaton
+    initial state S1: 
+    let o = 24;
+    until if (true) restart S2;
+    
+    state S2:
+    let o = 42;
+    until if (true) restart S1;
+    ;
+}
