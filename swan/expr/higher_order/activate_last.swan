@@ -1,0 +1,16 @@
+node activateLast (c: bool; i1: int32; i2: int32)
+returns (o: int32)
+{
+var
+    l1 : int32 default = 42;
+
+let 
+    l1 = 0 pre l1 + 1;
+    o = (activate add every c last l1) (i1, i2); 
+}
+
+function add (i1: int32; i2: int32)
+returns (o: int32)
+{
+let o = i1 + i2;
+}

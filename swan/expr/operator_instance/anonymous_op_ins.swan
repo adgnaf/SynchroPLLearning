@@ -1,0 +1,9 @@
+function anonymousOp (i1: int32^3; i2: int32^3)
+returns (o: int32^3)
+{
+let o = (map (
+            function (i1: int32; i2: int32) returns (o: int32) 
+            { let o = i1 + i2;}
+            ) 
+        ) <<3>> (i1,i2); 
+}

@@ -1,0 +1,11 @@
+function activateDefault (c: bool; i1: int32; i2: int32)
+returns (o: int32)
+{
+let o = (activate add every c default 42) (i1, i2);
+}
+
+function add (i1: int32; i2: int32)
+returns (o: int32)
+{
+let o = i1 + i2;
+}

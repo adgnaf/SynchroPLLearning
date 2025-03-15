@@ -1,0 +1,11 @@
+node restartTest (c: bool)
+returns (o: int32)
+{
+let o = (restart subOp4Restart every c) ();
+}
+
+node subOp4Restart ()
+returns (o: int32)
+{
+let o = (0 pre o) + 1;
+}
