@@ -11,3 +11,4 @@ returns (o_arr: int32^3; o_acc: int32)
 {
 let o_acc, o_arr = (mapfold add4mapfold) <<3>> (in_acc, arr1, arr2);
 }
+

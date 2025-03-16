@@ -14,3 +14,4 @@ returns (o: int32)
 {
 let o = i1 + i2;
 }
+

@@ -12,3 +12,4 @@ returns (o_acc: int32; o_arr: int32^3)
 let 
     o_acc, o_arr = (mapfoldi add4mapfoldi) <<3>> (0, in_arr);
 }
+

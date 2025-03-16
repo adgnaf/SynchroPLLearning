@@ -9,3 +9,4 @@ returns (o: int32)
 {
 let o = (0 pre o) + 1;
 }
+

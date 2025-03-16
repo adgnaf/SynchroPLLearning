@@ -9,3 +9,4 @@ returns (o_arr: int32^3)
 {
 let o_arr = (mapi add4mapi) <<3>> (arr1, arr2);
 }
+

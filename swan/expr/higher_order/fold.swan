@@ -9,3 +9,4 @@ returns (acc_o: int32)
 {
 let acc_o = (fold add) <<3>> (acc_in, elems);
 }
+

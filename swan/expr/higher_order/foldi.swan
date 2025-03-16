@@ -9,3 +9,4 @@ returns (o: int32)
 {
 let o = (foldi add4foldi) <<3>> (in_acc, in_arr);
 }
+
