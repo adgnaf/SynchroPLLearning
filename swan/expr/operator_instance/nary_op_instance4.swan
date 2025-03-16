@@ -1,0 +1,6 @@
+function naryOpIns4 (i1: int32^3; i2: int32^3; i3: int32^3)
+returns (o: int32^9)
+{
+let 
+  o = (@) (i1, i2, i3);
+}

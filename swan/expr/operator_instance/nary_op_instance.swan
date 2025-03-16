@@ -1,0 +1,7 @@
+function naryOpIns (i1: int32; i2: int32)
+returns (o: int32; o2: int32)
+{
+let 
+o = (+) (i1, i2);
+o2 = (*) (i1, i2);
+}

@@ -1,0 +1,7 @@
+function naryOpIns2 (i1: uint8; i2: uint8; i3: uint8)
+returns (o: uint8; o2: uint8)
+{
+let 
+    o = (land) (i1, i2, i3);
+    o2 = (lor) (i1, i2, i3);
+}

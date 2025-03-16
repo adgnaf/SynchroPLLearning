@@ -1,0 +1,8 @@
+function naryOpIns3 (i1: bool; i2: bool; i3: bool)
+returns (o: bool; o2: bool; o3: bool)
+{
+let 
+    o = (and) (i1, i2, i3);
+    o2 = (or) (i1, i2, i3);
+    o3 = (xor) (i1, i2, i3);
+}
