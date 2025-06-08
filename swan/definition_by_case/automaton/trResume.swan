@@ -1,0 +1,13 @@
+-- Resume state 
+node trResume() returns (o0: int32) 
+{
+let o0 : automaton 
+  initial state state0:
+  let o0 = 42;
+  until if (true) resume state1;
+  
+  state state1:
+  let o0 = 0 pre (o0 + 1);
+  until if (true) restart state0;
+;
+}

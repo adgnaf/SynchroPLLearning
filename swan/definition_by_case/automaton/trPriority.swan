@@ -1,0 +1,20 @@
+-- transition priority 
+node trPriority() returns (o0: int32)
+{
+let o0: automaton 
+  initial state state0:
+    let o2 = 0;
+  -- until restart state1;
+  --      restart state2;
+  :1: state0 until restart state1;
+  :2: state0 until restart state2;
+        
+  state state1:
+  let o2 = 1;
+  until restart state0;
+  
+  state state2:
+  let o2 = 2;
+  until restart state0;
+; 
+} 

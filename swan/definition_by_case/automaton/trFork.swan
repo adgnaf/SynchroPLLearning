@@ -1,0 +1,28 @@
+node trFork(unlock: bool; u: bool; d: bool; l: bool; r: bool)
+returns (x: int32 last = 0; y: int32 last = 0)
+{
+let x,y: automaton
+  initial state Stop:
+  unless if (unlock) if (u) resume Up
+                    elsif (d) resume Down
+                    elsif (l) resume Left
+                    elsif (r) resume Right end;
+                    
+  
+  state Up:
+  unless if (not u) resume Stop;
+  let y = last 'y + 1;
+  
+  state Down:
+  unless if (not d) resume Stop;
+  let y = last 'y - 1;
+  
+  state Left:
+  unless if (not l) resume Stop;
+  let x = last 'x + 1;
+  
+  state Right:
+  unless if (not r) resume Stop;
+  let x = last 'x - 1;
+;
+}

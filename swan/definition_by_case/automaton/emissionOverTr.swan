@@ -1,0 +1,16 @@
+node action_em (c: bool)
+returns (o: bool)
+{
+var 
+s: bool;
+
+let 
+o = s;
+s: automaton 
+    initial state S0:
+    unless if (c) resume S1;
+    
+    state S1:
+    unless if (c) { let emit 's; } resume S0;
+;
+}
