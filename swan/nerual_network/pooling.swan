@@ -1,0 +1,17 @@
+function Pool_max_Text <<D1, D2, D3>> (x: 'T^D1^D2^D3)
+returns (y: 'T^(D1/2)^(D2/2)^D3) where 'T numeric{
+let y = 
+    forward <<D3>> with [m] = x;
+      let ret = 
+          forward <<D2/2>> with <<i>>
+                  <<D1/2>> with <<j>>
+          let mij = 
+              forward <<4>> with [e] = [m[i*2][j*2],
+                                        m[i*2+1][j*2],
+                                        m[i*2][i*2+1],
+                                        m[i*2+1][j*2+1]];
+              let max = if e > last 'max then e else last 'max;
+              returns (max : last = 0);
+          returns ([[mij]]);
+    returns ([ret]);
+}

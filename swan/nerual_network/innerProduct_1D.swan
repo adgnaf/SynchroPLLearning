@@ -1,0 +1,9 @@
+function InnerProduct_1D_Text2 <<M, N>> (x: 'T^N; weight: 'T^N^M; bias: 'T^M)
+returns (y: 'T^M) where 'T numeric
+{
+ let y = forward <<M>> with <<i>>
+         let vi = forward <<N>> with [xi] = x; [wi] = weight[i];
+                    let ret = last 'ret + xi * wi;
+                  returns (ret : last = bias[i]);
+         returns ([vi]);
+}

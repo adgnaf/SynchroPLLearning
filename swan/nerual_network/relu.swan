@@ -1,0 +1,7 @@
+function ReLU_text <<N>> (x: 'T^N)
+returns (y: 'T^N) where 'T numeric
+{
+let y = (
+        map (function x => if x>=0 then x else 0)
+        ) <<N>> (x);
+}
